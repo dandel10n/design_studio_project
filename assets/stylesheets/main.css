@@ -1,0 +1,1254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+	background: #fff;
+	font-family: "Lato", sant-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1534px;
+}
+
+.part_of_container {
+	width: 940px;
+	margin: auto;
+}
+
+/*
+ ========================================
+  Header
+ ========================================
+*/
+
+header {
+	background-image: url("../images/bcgrndman.png");
+	background-repeat: no-repeat;
+	min-height: 1032px;
+	}
+
+.logo {
+	padding-top: 30px;
+    margin-left: 200px;
+}
+
+.header_words {
+	clear: both;
+	margin: auto;
+	width: 50%;
+}
+
+.big_logo {
+	margin: auto;
+	width: 192px;
+	padding-bottom: 60px;
+}
+
+.header_words h1 {
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	font-weight: bold;
+}
+
+.header_words h1,
+.header_words p {
+	line-height: 1.2;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0 0 10px black;
+}
+	
+.header_words p {
+	width: 706px;
+	min-height: 74px;
+}
+
+.scroll {
+	margin: auto;
+	width: 46px;
+	padding-top: 124px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav_header {
+    font-size: 16px;
+    float: right;
+    line-height: 1.2;
+    margin-right: 200px;
+    margin-top: -20px;
+    margin-bottom: 160px;
+    text-shadow: 0 0 10px black;
+}
+
+.nav_header li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.nav_header li:last-child {
+    margin-right: 0;
+}
+
+.nav_header li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+  ========================================
+  About us
+  ========================================
+*/
+
+.about_us {
+	min-height: 971px;
+}
+
+.about_us_logo span {
+	color: #ff9900;
+}
+
+.about_us_logo h2 {
+    font-size: 30px;
+    color: #0cf;
+    text-transform: uppercase;
+}
+
+.about_us_logo h3 {
+    font-size: 18px;
+    color: #666;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.about_us_logo h2, .about_us_logo h3 {
+	line-height: 1.2;
+    text-align: left;
+}
+
+.about_us_logo, .lines, .title div, .title p {
+	float: left;
+	padding-top: 120px;
+	margin-bottom: 75px;
+}
+
+.lines {
+	padding-left: 30px;
+}
+
+.title p, .our_team .title p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.25;
+    width: 60%;
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 50px;
+	text-align: left;
+}
+
+.about_us_nav {
+	clear: both;
+	background-color: #eaeaea;
+	width: 600px;
+	height: 58px;
+	-webkit-transform: skew(-19.3deg);
+	   -moz-transform: skew(-19.3deg);
+	     -o-transform: skew(-19.3deg);
+		    transform: skew(-19.3deg);
+}
+
+.about_us_nav li {
+	line-height: 58px;
+	text-align: center;
+	width: 150px;
+    font-size: 20px;
+    text-transform: uppercase;
+	display: inline-block;
+	height: 58px;
+	border-left: 1px solid white;
+}
+
+.about_us_nav li:hover {
+    background-color: #00ccff;	
+}
+
+.about_us_nav li a:hover {
+    color: #fff;	
+}
+
+.about_us_nav li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	-webkit-transform: skew(10deg);
+	   -moz-transform: skew(10deg);
+	     -o-transform: skew(10deg);
+		    transform: skew(10deg);
+}
+
+/*
+  ========================================
+  Focus
+  ========================================
+*/
+
+.focus {
+	margin-top: 90px;
+	max-width: 940px;
+	clear: both;
+}
+
+.part_of_focus {
+	display: inline-block;
+	width: 50%;
+	min-height: 176px;
+	float: left;
+}
+
+.part_of_focus h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+	
+.part_of_focus p {
+    font-size: 16px;
+    color: #999;
+    padding-right: 25px;
+}
+
+.part_of_focus h2, 
+.part_of_focus p {
+    line-height: 1.2;
+    text-align: left;
+}
+
+.icon {
+	display: inline-block;
+	float: left;
+	width: 105px;
+	height: 104px;
+	margin: 35px 30px 0 20px;
+	background-color: #eaeaea;
+	text-align: center;
+	-webkit-transform: skew(-8.7deg);
+	   -moz-transform: skew(-8.7deg);
+	     -o-transform: skew(-8.7deg);
+		    transform: skew(-8.7deg);
+			
+}
+
+.icon i {
+	color: #fff;
+	font-size: 70px;
+	line-height: 104px;
+	-webkit-transform: skew(8.7deg);
+	   -moz-transform: skew(8.7deg);
+	     -o-transform: skew(8.7deg);
+		    transform: skew(8.7deg);
+}
+
+
+a:hover .icon {
+	 background-color: #00ccff;
+}
+
+.part_of_focus a {
+	text-decoration: none;
+}
+
+.part_of_focus:nth-child(odd) {
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.part_of_focus:nth-child(even) {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.part_of_focus:nth-last-child(2) {
+	border-bottom: none;
+}
+
+.part_of_focus:last-child {
+	border: none;
+}
+
+/*
+  ========================================
+  Our skills
+  ========================================
+*/
+
+.our_skills {
+	background-color: #f7f7f7;
+	min-height: 1130px;
+}
+	
+.our_skills h4,
+.fun_facts h4,
+.addit_work h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 125px;
+	padding-bottom: 53px;
+}
+
+.our_skills p,
+.fun_facts p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.25;
+    margin: auto;
+	text-align: center;
+    width: 37%;
+    min-height: 35px;
+	padding-bottom: 105px;
+}
+
+.our_skills .part_of_container .col-1-4 h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.our_skills .part_of_container .col-1-4 p {
+	font-size: 16px;
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+    text-align: center;
+	width: 201px;
+    min-height: 53px;
+}
+
+.col-1-4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  position: relative;
+}
+
+.col-1-4 img {
+	display: block;
+	width: 154px;
+	margin: auto;
+}
+
+.col-1-4 span {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  top: 14%;
+  right: 37%;
+}
+
+/*
+  ========================================
+  Our team
+  ========================================
+*/
+
+.our_team {
+	background-image: url("../images/bcgrndteam.png");
+	background-repeat: no-repeat;
+	min-height: 1082px;
+	margin-top: -382px;
+	padding-top: 128px;
+}
+
+.our_team .title span,
+.our_team .title p,
+.our_team .title  h3 {
+	color: #fff;
+}
+
+.team {
+	clear: both;
+}
+
+.photos {
+	border-radius: 50%;
+	width: 179px;
+	height: 180px;
+}
+
+.photos img{
+	width: inherit;
+	height: inherit;
+	margin: 0;
+	position: relative;
+	border-radius: inherit;
+}
+
+.social_media_links {
+	width: 179px;
+	height: 180px;
+	position: absolute;
+	background-color: #000;
+    opacity: 0.89;
+	top: 0;
+	left: 0;
+	line-height: 180px;
+	display: none;
+	border-radius: inherit;
+}
+    
+.social_media_links a {
+	font-size: 18px;
+	color: #b1afad;
+	padding-right: 17px;
+	text-decoration: none;
+}
+
+.social_media_links a:first-child {
+	padding-left: 28px;
+}
+
+.team  .photos:hover .social_media_links{
+  	display: block;
+}
+
+.social_media_links a:hover {
+	color: #0cf;
+}
+
+.team .col-1-4 h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+.team .col-1-4 h6 {
+    font-size: 12px;
+    color: #00ccff;
+    line-height: 1.2;
+    text-align: left;
+	padding-left: 38px;
+	padding-bottom: 20px;
+}
+
+.team .col-1-4 p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: left;
+    width: 85%;
+    min-height: 40px;
+	margin: 0;
+}
+
+/*
+  ========================================
+  Our services
+  ========================================
+*/
+
+.our_sevices {
+	min-height: 1010px;
+}
+
+.our_sevices .part_of_focus h2 {
+	color: #ff9900;
+}
+
+.our_sevices .part_of_focus .icon {
+	background-color: #00ccff;
+}
+
+/*
+  ========================================
+  Fun Facts
+  ========================================
+*/
+
+.fun_facts {
+	min-height: 780px;
+	background-color: #f7f7f7;
+}
+
+.fun_facts p {
+	padding-bottom: 0;
+}
+
+.fun_blocks .col-1-4 {
+	min-height: 265px;
+	border: 1px solid #e2e2e2;
+	width: 240px;
+	text-align: center;
+	line-height: 1.2;
+	background-color: #fff;
+	margin-top: 75px;
+}
+
+.fun_blocks .col-1-4:first-child,
+.fun_blocks .col-1-4:last-child {
+	width: 230px;
+}
+
+.fun_icon {
+	font-size: 70px;
+	color: #333;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.fun_blocks .col-1-4 p {
+	font-size: 22px;
+	color: #0cf;
+	width: 80%;
+}
+
+.fun_blocks .col-1-4 p.index {
+	font-size: 52px;
+	color: #333;	
+}
+
+/*
+  ========================================
+  Our Work
+  ========================================
+*/
+
+.our_work {
+	min-height: 1470px;
+}
+
+.our_work  .about_us_logo, .our_work  .lines, .our_work .title p {
+	margin-bottom: 115px;
+	padding-top: 180px;
+}
+
+.case_studies {
+	clear: both;
+}
+
+.one_case_study {
+	display: inline-block;
+	padding-right: 35px;
+	padding-left: 1px;
+	padding-bottom: 36px;
+	position: relative;
+}
+
+
+.one_case_study:nth-child(3),
+.one_case_study:last-child  {
+	padding-right: 1px;
+}
+
+.case_study_discr {
+	position: absolute;
+	top: 0;
+	left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+	padding-right: 35px;
+	padding-bottom: 36px;
+	text-align: center;
+	height: 270px;
+	margin-top: 107px;
+	margin-bottom: 107x;
+}	
+
+.case_study_discr h4 {
+    font-size: 48px;
+    color: #333;
+	padding-bottom: 30px;
+}
+
+.case_study_discr p {
+    font-size: 24px;
+    color: #333;
+	width: 375px;
+	margin: auto;
+	padding-bottom: 45px;
+}
+
+.case_study_discr .button {
+	width: 333px;
+	margin: auto;
+	border: 4px solid #333;
+	font-size: 30px;
+	height: 62px;
+	line-height: 54px;
+	display: none;
+}
+
+.case_study_discr .button a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+
+.case_study_discr:hover .button{
+	display: block;
+}
+
+/*
+  ========================================
+  Additional Work
+  ========================================
+*/
+
+.addit_work {
+	min-height: 1427px;
+	background-color: #f7f7f7;
+}
+
+.addit_work h4 {
+	padding-top: 125px;
+	padding-bottom: 20px;
+}
+
+.addit_work p {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nav_section {
+    font-size: 14px;
+    line-height: 1.2;
+	text-align: left;
+	width: 415px;
+	margin: auto;
+	margin-top: 95px;
+	margin-bottom: 75px;
+}
+
+.nav_section li {
+    display: inline-block;
+	margin-right: 5px;
+    vertical-align: top;
+
+}
+
+.nav_section li:last-child {
+    margin-right: 0;
+}
+
+.nav_section li a {
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 8px 13px;
+    text-decoration: none;
+    color: #666;
+}
+
+.nav_section li:hover,
+.nav_section li.active {
+	background-color: #f1f1f1;
+}
+
+.addit_work_block {
+	display: inline-block;
+	width: 299px;
+	height: 284px;
+	margin-right: 20px;
+}
+
+.addit_work_block:last-child,
+.addit_work_block:nth-child(3) {
+	margin-right: 0;
+}
+
+.addit_work_block h5 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.addit_work_block p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.images {
+	width: 299px;
+	height: 161px;
+	position: relative;
+} 
+
+.search_links {
+	width: 299px;
+	height: 161px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+    opacity: 0.80;
+	line-height: 161px;
+	text-align: center;
+	display: none;
+}
+
+.addit_work_block:hover  .search_links {
+	display: block;
+}
+
+.search_links a {
+	font-size: 18px;
+	color: #b1afad;
+	padding-right: 17px;
+	text-decoration: none;
+	margin: auto;
+}
+
+.search_links a:hover {
+	color: #0cf;
+}
+
+.load_button a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	width: 140px;
+	height: 33px;
+	margin: auto;
+    text-transform: uppercase;
+    line-height: 33px;
+    text-align: center;
+    background-color: #0cf;
+    border-radius: 2px;
+	margin-top: 40px;
+}
+
+
+/*
+  ========================================
+  Twitter
+  ========================================
+*/
+
+.twitter {
+	background-image: url("../images/bcgrndtwitter2.png");
+	background-repeat: no-repeat;
+	min-height: 830px;
+	margin-top: -247px;
+	
+}
+
+.twitter i,
+.quote i  {
+	display: block;
+    font-size: 100px;
+    color: #0cf;
+    text-align: center;
+    padding-top: 240px;
+	padding-bottom: 95px;
+}
+
+.twitter p,
+.quote p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.nav_circle {
+	text-align: center;
+	width: 65px;
+	height: 20px;
+	margin: auto;
+	margin-top: 97px;
+	margin-bottom: 30px;
+}
+
+.nav_circle a {
+	display: inline-block;
+	text-decoration: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin-right: 5px;
+}
+
+.nav_circle a:last-child {
+    margin-right: 0;
+}
+
+.nav_circle a:hover,
+.nav_circle a.active {
+	background-color: #999;
+}
+
+.twitter span {
+	display: block;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.twitter span a {
+	text-decoration: none;
+	color: #26809c;
+}
+
+/*
+  ========================================
+  Testimony
+  ========================================
+*/
+
+.our_testimonial {
+	min-height: 945px;
+}
+
+.logos {
+	clear: both;
+	margin-bottom: 58px;
+	padding-top: 45px;
+}
+
+.one_logo {
+	height: 61px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.one_logo:first-child {
+	margin-left: 20px;
+}
+
+.one_logo:last-child {
+	margin-right: 0;
+}
+
+.column {
+	width: 300px;
+	min-height: 200px;
+	display: inline-block;
+	border: 1px solid #efefef;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+	margin-right: 20px;
+    padding-top: 25px;
+    padding-left: 10px;	
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.column p {
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+    line-height: 1.25;
+    text-align: left;
+    width: 243px;
+}
+
+.sign {
+	position: absolute;
+	height: 65px;
+	width: 275px;
+	bottom: 10px;
+	left: 10px;
+	border-top: 2px solid #cacaca;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.sign img {
+	float: left;
+	margin-right: 10px;
+	padding-left: 2px;
+}
+
+.sign div {
+    font-size: 14px;
+    color: #09f;
+    text-align: left;
+	padding-top: 7px;
+}
+
+.sign span {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+
+.our_testimonial .nav_circle {
+	margin-top: 70px;
+}
+
+/*
+  ========================================
+  Prices
+  ========================================
+*/
+
+.prices {
+	min-height: 1407px;
+	background-color: #eaeaea;
+}
+
+.prices  .about_us_logo, .prices  .lines, .prices .title p {
+	margin-bottom: 125px;
+	padding-top: 205px;
+}
+
+.order {
+	clear: both;
+}
+
+.basic_plan {
+	width: 218px;
+	margin: auto;
+	height: 80px;
+	line-height: 80px;
+	background-color: #0cf;
+	text-align: center;
+	border: 1px solid #ccc;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.order .col-1-4 {
+	margin-right: 20px;
+	width: 220px;
+	min-height: 550px;
+	text-align: center;
+	line-height: 2.857;
+}
+
+.order .col-1-4:last-child {
+	margin-right: 0;
+}
+
+sup {
+	font-size: 36px;
+	vertical-align: super;
+}
+
+.order .col-1-4 h5 {
+    font-size: 60px;
+    font-weight: bold;
+	color: #333;
+    text-align: center;
+}
+
+sub {
+    font-size: 24px;
+	font-weight: normal;
+}
+
+.order .col-1-4 p {
+    font-size: 14px;
+    color: #333;
+}
+
+.order .col-1-4 .order_button {
+	border: 1px solid #333;
+	border-radius: 4px;
+	width: 124px;
+	margin: auto;
+	margin-top: 40px;
+    height: 40px;
+	line-height: 40px;
+}
+
+.order .col-1-4 .order_button a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	color: #333;
+	font-weight: bold;
+}
+
+.order .col-1-4 .free_trial {
+    font-size: 11px;
+    color: #999;
+    line-height: 3.636;
+    text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Quote
+  ========================================
+*/
+
+.quote {
+	background-image: url("../images/bcgrndtwitter2.png");
+	background-repeat: no-repeat;
+	min-height: 830px;
+	margin-top: -254px;
+}
+
+.quote .author {
+	padding-top: 65px;
+}
+
+.quote .nav_circle {
+	margin-top: 35px;
+}
+
+.quote i {
+	padding-bottom: 75px;
+}
+
+/*
+  ========================================
+  Get in touch
+  ========================================
+*/
+
+
+.get_in_touch {
+	min-height: 1515px;
+}
+
+.get_in_touch .about_us_logo, 
+.get_in_touch .lines,
+.get_in_touch .title div, 
+.get_in_touch .title p {
+	padding-top: 180px;
+	margin-bottom: 165px;
+}
+
+form {
+	margin-bottom: 150px;
+	width: 550px;
+	min-height: 290px;
+	float: left;
+	clear: left;
+}
+
+.message_group input,
+.message_group textarea {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 18px;
+	
+}
+
+.message_group input:first-child {
+	margin-right: 10px;
+}
+
+.message_group input {
+	width: 261px;
+	height: 48px;
+	display: inline-block;
+}
+
+.message_group .subject {
+	width: 536px;
+	display: block;
+}
+
+.message_group textarea {
+	width: 536px;
+	height: 158px;
+}
+
+.send_btn {
+	height: 50px;
+	width: 145px;
+	color: #fff;
+	background-color: #0cf;
+	cursor: pointer;
+	font-size: 16px;
+	border: 1px solid #0cf;
+	border-radius: 4px;
+}
+
+.addit_info {
+	float: left;
+	width: 340px;
+	text-align: left;
+	margin-left: 25px;
+}
+
+.addit_info h5 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.addit_info p {
+	font-size: 16px;
+	color: #666;
+	padding-bottom: 40px;
+	line-height: 1.375;
+}
+
+.addit_info .contacts p {
+	font-size: 16px;
+	color: #666;
+	padding-bottom: 0px;
+}
+
+.addit_info .contacts p i {
+	font-size: 24px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#map {
+	width: 1534px;
+	height: 550px;
+	margin-bottom: 5px;
+}
+
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer {
+	min-height: 179px;
+}
+
+.social_media {
+	min-height: 119px;
+	background-color: #2f2e2e;
+	text-align: center;
+	line-height: 119px;
+}
+
+.social_media a {
+	text-decoration: none;
+    font-size: 35px;
+    color: #fff;
+	padding-right: 25px;
+}
+
+.social_media a:last-child {
+	padding-right: 0;
+}
+
+.rights {
+	min-height: 60px;
+	background-color: #0cf;
+    font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+}
+
+.rights a {
+	text-decoration: none;
+	color: #0f91b1;
+}
