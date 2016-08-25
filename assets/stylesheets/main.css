@@ -52,10 +52,22 @@ table {
   ========================================
 */
 
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
 body {
     background: #fff;
     font-family: "Lato", sant-serif;
 }
+
+
+/*@media screen and (min-width: 400px)  {...}
+@media screen and (min-width: 600px)  {...}
+@media screen and (min-width: 1000px) {...}
+@media screen and (min-width: 1400px) {...}*/
+
 
 /*
   ========================================
@@ -72,13 +84,14 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1534px;
+    margin: 0;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 .part_of_container {
-    width: 940px;
-    margin: auto;
+    width: 61.278%;
+    margin: 0 auto;
 }
 
 /*
@@ -89,13 +102,14 @@ body {
 
 header {
     background-image: url("../images/bcgrndman.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    min-height: 1032px;
+    min-height: 64.5em;
 }
 
 .logo {
-    padding-top: 30px;
-    margin-left: 200px;
+    padding-top: 1.875em;
+    margin-left: 17.5em;
 }
 
 .header_words {
@@ -106,36 +120,31 @@ header {
 
 .big_logo {
     margin: auto;
-    width: 192px;
-    padding-bottom: 60px;
+    width: 12em;
+    padding-bottom: 3.75em;
 }
 
-.header_words h1 {
+.header_words h2 {
     text-transform: uppercase;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
     font-weight: bold;
 }
 
-.header_words h1,
+.header_words h2,
 .header_words p {
     line-height: 1.2;
-    margin: auto;
-    width: 50%;
     text-align: center;
     color: #fff;
-    font-size: 22px;
+    margin: auto;
+    width: 90%;
+    font-size: 1.375em;
     text-shadow: 0 0 10px black;
 }
 	
-.header_words p {
-    width: 706px;
-    min-height: 74px;
-}
-
 .scroll {
     margin: auto;
-    width: 46px;
-    padding-top: 124px;
+    width: 2.875em;
+    padding-top: 7.75em;
 }
 
 /*
@@ -145,23 +154,26 @@ header {
 */
 
 .nav_header {
-    font-size: 16px;
+    font-size: 1em;
     float: right;
-    line-height: 1.2;
-    margin-right: 200px;
-    margin-top: -20px;
-    margin-bottom: 160px;
+    margin-right: 22em;
+    margin-top: -1.25em;
+    margin-bottom: 10em;
     text-shadow: 0 0 10px black;
 }
 
 .nav_header li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 1.25em;
     vertical-align: top;
 }
 
 .nav_header li:last-child {
     margin-right: 0;
+}
+
+.nav_header li:first-child {
+    margin-left: 0;
 }
 
 .nav_header li a {
@@ -176,7 +188,7 @@ header {
 */
 
 .about_us {
-    min-height: 971px;
+    min-height: 60.6875em;
 }
 
 .about_us_logo span {
@@ -184,49 +196,48 @@ header {
 }
 
 .about_us_logo h2 {
-    font-size: 30px;
+    font-size: 1.875em;
+    font-weight: bold;
     color: #0cf;
     text-transform: uppercase;
 }
 
 .about_us_logo h3 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #666;
     text-transform: capitalize;
     font-style: italic;
 }
 
 .about_us_logo h2, .about_us_logo h3 {
-    line-height: 1.2;
     text-align: left;
 }
 
 .about_us_logo, .lines, .title div, .title p {
     float: left;
-    padding-top: 120px;
-    margin-bottom: 75px;
+    padding-top: 7.5em;
+    margin-bottom: 4.6875em;
 }
 
 .lines {
-    padding-left: 30px;
+    padding-left: 1.875em;
 }
 
 .title p, .our_team .title p{
-    font-size: 16px;
+    font-size: 1em;
     color: #666;
     line-height: 1.25;
     width: 60%;
     display: inline-block;
-    padding-left: 30px;
-    margin-top: 50px;
+    padding-left: 1.875em;
+    margin-top: 3.125em;
     text-align: left;
 }
 
 .about_us_nav {
     clear: both;
     background-color: #eaeaea;
-    width: 600px;
-    height: 58px;
+    width: 37.5em;
     -webkit-transform: skew(-19.3deg);
        -moz-transform: skew(-19.3deg);
          -o-transform: skew(-19.3deg);
@@ -234,13 +245,13 @@ header {
 }
 
 .about_us_nav li {
-    line-height: 58px;
+    line-height: 3.625em;
     text-align: center;
-    width: 150px;
-    font-size: 20px;
+    width: 7.5em;
+    font-size: 1.25em;
     text-transform: uppercase;
     display: inline-block;
-    height: 58px;
+    height: 3.625em;
     border-left: 1px solid white;
 }
 
@@ -269,30 +280,30 @@ header {
 */
 
 .focus {
-    margin-top: 90px;
-    max-width: 940px;
+    margin-top: 5.625em;
+    max-width: 58.75em;
     clear: both;
 }
 
 .part_of_focus {
     display: inline-block;
     width: 50%;
-    min-height: 176px;
+    min-height: 11em;
     float: left;
 }
 
 .part_of_focus h2 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #333;
     font-weight: bold;
-    padding-top: 35px;
-    padding-bottom: 15px;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 	
 .part_of_focus p {
-    font-size: 16px;
+    font-size: 1em;
     color: #999;
-    padding-right: 25px;
+    padding-right: 1.5625em;
 }
 
 .part_of_focus h2, 
@@ -304,9 +315,9 @@ header {
 .icon {
     display: inline-block;
     float: left;
-    width: 105px;
-    height: 104px;
-    margin: 35px 30px 0 20px;
+    width: 6.5625em;
+    height: 6.5em;
+    margin: 2.1875em 1.875em 0 1.25em;
     background-color: #eaeaea;
     text-align: center;
     -webkit-transform: skew(-8.7deg);
@@ -317,8 +328,8 @@ header {
 
 .icon i {
     color: #fff;
-    font-size: 70px;
-    line-height: 104px;
+    font-size: 4.375em;
+    line-height: 1.4857em;
     -webkit-transform: skew(8.7deg);
        -moz-transform: skew(8.7deg);
          -o-transform: skew(8.7deg);
@@ -358,52 +369,52 @@ a:hover .icon {
 
 .our_skills {
     background-color: #f7f7f7;
-    min-height: 1130px;
+    min-height: 58.1875em;
 }
 	
 .our_skills h4,
 .fun_facts h4,
 .addit_work h4 {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #666;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    padding-top: 125px;
-    padding-bottom: 53px;
+    padding-top: 5.208em;
+    padding-bottom: 2.208em;
 }
 
 .our_skills p,
 .fun_facts p {
-    font-size: 16px;
+    font-size: 1em;
     color: #666;
     line-height: 1.25;
     margin: auto;
     text-align: center;
     width: 37%;
-    min-height: 35px;
-    padding-bottom: 105px;
+    min-height: 2.1875em;
+    padding-bottom: 6.5625em;
 }
 
 .our_skills .part_of_container .col-1-4 h4 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #333;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .our_skills .part_of_container .col-1-4 p {
-    font-size: 16px;
+    font-size: 1em;
     color: rgb(153, 153, 153);
     line-height: 1.2;
     text-align: center;
-    width: 201px;
-    min-height: 53px;
+    width: 12.5625em;
+    min-height: 3.3125em;
 }
 
 .col-1-4 {
@@ -415,12 +426,12 @@ a:hover .icon {
 
 .col-1-4 img {
     display: block;
-    width: 154px;
+    width: 9.625em;
     margin: auto;
 }
 
 .col-1-4 span {
-    font-size: 30px;
+    font-size: 1.875em;
     color: #333;
     font-weight: bold;
     line-height: 1.2;
@@ -439,9 +450,11 @@ a:hover .icon {
 .our_team {
     background-image: url("../images/bcgrndteam.png");
     background-repeat: no-repeat;
-    min-height: 1082px;
-    margin-top: -382px;
-    padding-top: 128px;
+    background-size: 100% 100%;
+    background-position: top;
+    min-height: 67.625em;
+    margin-top: -10.3125em;
+    padding-top: 8em;
 }
 
 .our_team .title span,
@@ -456,8 +469,8 @@ a:hover .icon {
 
 .photos {
     border-radius: 50%;
-    width: 179px;
-    height: 180px;
+    width: 11.1875em;
+    height: 11.25em;
 }
 
 .photos img{
@@ -469,27 +482,27 @@ a:hover .icon {
 }
 
 .social_media_links {
-    width: 179px;
-    height: 180px;
+    width: 11.1875em;
+    height: 11.25em;
     position: absolute;
     background-color: #000;
     opacity: 0.89;
     top: 0;
     left: 0;
-    line-height: 180px;
+    line-height: 11.25em;
     display: none;
     border-radius: inherit;
 }
     
 .social_media_links a {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #b1afad;
-    padding-right: 17px;
+    padding-right: 0.944em;
     text-decoration: none;
 }
 
 .social_media_links a:first-child {
-    padding-left: 28px;
+    padding-left: 1.556em;
 }
 
 .team  .photos:hover .social_media_links{
@@ -501,31 +514,32 @@ a:hover .icon {
 }
 
 .team .col-1-4 h4 {
-    font-size: 20px;
+    font-size: 1.25em;
+    text-transform: uppercase;
     color: #fff;
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-top: 1.5em;
+    padding-bottom: 0.25em;
 }
 
 .team .col-1-4 h6 {
-    font-size: 12px;
+    font-size: 0.75em;
     color: #00ccff;
     line-height: 1.2;
     text-align: left;
-    padding-left: 38px;
-    padding-bottom: 20px;
+    padding-left: 3.167em;
+    padding-bottom: 1.667em;
 }
 
 .team .col-1-4 p {
-    font-size: 12px;
+    font-size: 0.75em;
     color: #fff;
     line-height: 1.2;
     text-align: left;
     width: 85%;
-    min-height: 40px;
+    min-height: 3.334em;
     margin: 0;
 }
 
@@ -536,7 +550,7 @@ a:hover .icon {
 */
 
 .our_sevices {
-    min-height: 1010px;
+    min-height: 63.125em;
 }
 
 .our_sevices .part_of_focus h2 {
@@ -554,7 +568,7 @@ a:hover .icon {
 */
 
 .fun_facts {
-    min-height: 780px;
+    min-height: 48.75em;
     background-color: #f7f7f7;
 }
 
@@ -563,36 +577,40 @@ a:hover .icon {
 }
 
 .fun_blocks .col-1-4 {
-    min-height: 265px;
+    min-height: 16.5625em;
     border: 1px solid #e2e2e2;
-    width: 240px;
+    width: 15em;
     text-align: center;
-    line-height: 1.2;
     background-color: #fff;
-    margin-top: 75px;
+    margin-top: 4.6875em;
 }
 
 .fun_blocks .col-1-4:first-child,
 .fun_blocks .col-1-4:last-child {
-    width: 230px;
+    width: 14.375em;
 }
 
 .fun_icon {
-    font-size: 70px;
+    font-size: 4.375em;
     color: #333;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 0.5714em;
+    padding-bottom: 0.1429em;
 }
 
 .fun_blocks .col-1-4 p {
-    font-size: 22px;
+    font-size: 1.375em;
     color: #0cf;
     width: 80%;
+    margin-top: 1em;
 }
 
 .fun_blocks .col-1-4 p.index {
-    font-size: 52px;
-    color: #333;	
+    font-size: 3.25em;
+    color: #333;
+    min-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0.769em;
+    font-weight: 300;
 }
 
 /*
@@ -602,12 +620,12 @@ a:hover .icon {
 */
 
 .our_work {
-    min-height: 1470px;
+    min-height: 91.875em;
 }
 
 .our_work  .about_us_logo, .our_work  .lines, .our_work .title p {
-    margin-bottom: 115px;
-    padding-top: 180px;
+    margin-bottom: 7.1875em;
+    padding-top: 11.25em;
 }
 
 .case_studies {
@@ -616,9 +634,9 @@ a:hover .icon {
 
 .one_case_study {
     display: inline-block;
-    padding-right: 35px;
+    padding-right: 2.1875em;
     padding-left: 1px;
-    padding-bottom: 36px;
+    padding-bottom: 2.1875em;
     position: relative;
 }
 
@@ -635,35 +653,35 @@ a:hover .icon {
     bottom: 0;
     right: 0;
     margin: auto;
-    padding-right: 35px;
-    padding-bottom: 36px;
+    padding-right: 2.1875em;
+    padding-bottom: 2.25em;
     text-align: center;
-    height: 270px;
-    margin-top: 107px;
-    margin-bottom: 107x;
+    height: 16.875em;
+    margin-top: 6.6875em;
+    margin-bottom: 6.6875em;
 }	
 
 .case_study_discr h4 {
-    font-size: 48px;
+    font-size: 3em;
     color: #333;
-    padding-bottom: 30px;
+    padding-bottom: 0.625em;
 }
 
 .case_study_discr p {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #333;
-    width: 375px;
+    width: 15.625em;
     margin: auto;
-    padding-bottom: 45px;
+    padding-bottom: 1.875em;
 }
 
 .case_study_discr .button {
-    width: 333px;
+    width: 11.1em;
     margin: auto;
     border: 4px solid #333;
-    font-size: 30px;
-    height: 62px;
-    line-height: 54px;
+    font-size: 1.875em;
+    height: 2.0667em;
+    line-height: 1.8em;
     display: none;
 }
 
@@ -684,35 +702,35 @@ a:hover .icon {
 */
 
 .addit_work {
-    min-height: 1427px;
+    min-height: 89.1875em;
     background-color: #f7f7f7;
 }
 
 .addit_work h4 {
-    padding-top: 125px;
-    padding-bottom: 20px;
+    padding-top: 5.2083em;
+    padding-bottom: 0.8333em;
 }
 
 .addit_work p {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #333;
     line-height: 1.2;
     text-align: center;
 }
 
 .nav_section {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 1.2;
     text-align: left;
-    width: 415px;
+    width: 29.6429em;
     margin: auto;
-    margin-top: 95px;
-    margin-bottom: 75px;
+    margin-top: 6.7857em;
+    margin-bottom: 5.3572em;
 }
 
 .nav_section li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0.3572em;
     vertical-align: top;
 }
 
@@ -724,7 +742,7 @@ a:hover .icon {
     display: block;
     border: 1px solid #ccc;
     border-radius: 2px;
-    padding: 8px 13px;
+    padding: 0.5714em 0.9286em;
     text-decoration: none;
     color: #666;
 }
@@ -736,9 +754,9 @@ a:hover .icon {
 
 .addit_work_block {
     display: inline-block;
-    width: 299px;
-    height: 284px;
-    margin-right: 20px;
+    width: 18.6875em;
+    height: 17.75em;
+    margin-right: 1.25em;
 }
 
 .addit_work_block:last-child,
@@ -747,37 +765,36 @@ a:hover .icon {
 }
 
 .addit_work_block h5 {
-    font-size: 16px;
+    font-size: 1em;
     color: #333;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding-top: 1.5625em;
+    padding-bottom: 0.9375em;
 }
 
 .addit_work_block p {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #333;
-    line-height: 1.2;
     text-align: center;
 }
 
 .images {
-    width: 299px;
-    height: 161px;
+    width: 18.6875em;
+    height: 10.0625em;
     position: relative;
 } 
 
 .search_links {
-    width: 299px;
-    height: 161px;
+    width: inherit;
+    height: inherit;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #000;
     opacity: 0.80;
-    line-height: 161px;
+    line-height: 10.0625em;
     text-align: center;
     display: none;
 }
@@ -787,9 +804,9 @@ a:hover .icon {
 }
 
 .search_links a {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #b1afad;
-    padding-right: 17px;
+    padding-right: 0.9444em;
     text-decoration: none;
     margin: auto;
 }
@@ -802,16 +819,16 @@ a:hover .icon {
     text-decoration: none;
     color: #fff;
     display: block;
-    font-size: 14px;
-    width: 140px;
-    height: 33px;
+    font-size: 0.875em;
+    width: 10em;
+    height: 2.3572em;
     margin: auto;
     text-transform: uppercase;
-    line-height: 33px;
+    line-height: 2.3572em;
     text-align: center;
     background-color: #0cf;
     border-radius: 2px;
-    margin-top: 40px;
+    margin-top: 2.8572em;
 }
 
 /*
@@ -823,47 +840,48 @@ a:hover .icon {
 .twitter {
     background-image: url("../images/bcgrndtwitter2.png");
     background-repeat: no-repeat;
-    min-height: 830px;
-    margin-top: -247px;
+    background-size: 100% 100%;
+    min-height: 51.875em;
+    margin-top: -10.3125em;
 }
 
 .twitter i,
 .quote i  {
     display: block;
-    font-size: 100px;
+    font-size: 6.25em;
     color: #0cf;
     text-align: center;
-    padding-top: 240px;
-    padding-bottom: 95px;
+    padding-top: 2.40em;
+    padding-bottom: 0.95em;
 }
 
 .twitter p,
 .quote p {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #fff;
     line-height: 1.2;
-    width: 850px;
+    width: 47.2222em;
     margin: auto;
     text-align: center;
 }
 
 .nav_circle {
     text-align: center;
-    width: 65px;
-    height: 20px;
+    width: 4.0625em;
+    height: 1.25em;
     margin: auto;
-    margin-top: 97px;
-    margin-bottom: 30px;
+    margin-top: 6.0625em;
+    margin-bottom: 1.875em;
 }
 
 .nav_circle a {
     display: inline-block;
     text-decoration: none;
-    width: 10px;
-    height: 10px;
+    width: 0.625em;
+    height: 0.625em;
     border-radius: 50%;
     background-color: #ccc;
-    margin-right: 5px;
+    margin-right: 0.3125em;
 }
 
 .nav_circle a:last-child {
@@ -877,9 +895,8 @@ a:hover .icon {
 
 .twitter span {
     display: block;
-    font-size: 22px;
+    font-size: 1.375em;
     color: #fff;
-    line-height: 1.2;
     text-align: center;
 }
 
@@ -895,23 +912,23 @@ a:hover .icon {
 */
 
 .our_testimonial {
-    min-height: 945px;
+    min-height: 59.0625em;
 }
 
 .logos {
     clear: both;
-    margin-bottom: 58px;
-    padding-top: 45px;
+    margin-bottom: 3.625em;
+    padding-top: 2.8125em;
 }
 
 .one_logo {
-    height: 61px;
+    height: 3.8125em;
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 2.5em;
 }
 
 .one_logo:first-child {
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .one_logo:last-child {
@@ -919,16 +936,16 @@ a:hover .icon {
 }
 
 .column {
-    width: 300px;
-    min-height: 200px;
+    width: 18.75em;
+    min-height: 12.5em;
     display: inline-block;
     border: 1px solid #efefef;
     background-color: #f7f7f7;
     border-radius: 4px;
-    margin-right: 20px;
-    padding-top: 25px;
-    padding-left: 10px;	
-    padding-bottom: 10px;
+    margin-right: 1.25em;
+    padding-top: 1.5625em;
+    padding-left: 0.625em;	
+    padding-bottom: 0.625em;
     position: relative;
 }
 
@@ -937,46 +954,46 @@ a:hover .icon {
 }
 
 .column p {
-    font-size: 16px;
+    font-size: 1em;
     color: #999;
     font-style: italic;
     line-height: 1.25;
     text-align: left;
-    width: 243px;
+    width: 15.1875em;
 }
 
 .sign {
     position: absolute;
-    height: 65px;
-    width: 275px;
-    bottom: 10px;
-    left: 10px;
+    height: 4.0625em;
+    width: 17.1875em;
+    bottom: 0.625em;
+    left: 0.625em;
     border-top: 2px solid #cacaca;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 0.9375em;
+    padding-bottom: 0.3125em;
 }
 
 .sign img {
     float: left;
-    margin-right: 10px;
-    padding-left: 2px;
+    margin-right: 0.625em;
+    padding-left: 0.125em;
 }
 
 .sign div {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #09f;
     text-align: left;
-    padding-top: 7px;
+    padding-top: 0.5em;
 }
 
 .sign span {
-    font-size: 12px;
+    font-size: 0.75em;
     color: #999;
     text-align: left;
 }
 
 .our_testimonial .nav_circle {
-    margin-top: 70px;
+    margin-top: 4.375em;
 }
 
 /*
@@ -986,13 +1003,13 @@ a:hover .icon {
 */
 
 .prices {
-    min-height: 1407px;
+    min-height: 82.1875em;
     background-color: #eaeaea;
 }
 
 .prices  .about_us_logo, .prices  .lines, .prices .title p {
-    margin-bottom: 125px;
-    padding-top: 205px;
+    margin-bottom: 7.8125em;
+    padding-top: 12.8125em;
 }
 
 .order {
@@ -1000,22 +1017,22 @@ a:hover .icon {
 }
 
 .basic_plan {
-    width: 218px;
+    width: 9.9091em;
     margin: auto;
-    height: 80px;
-    line-height: 80px;
+    height: 3.6364em;
+    line-height: 3.6364em;
     background-color: #0cf;
     text-align: center;
     border: 1px solid #ccc;
-    font-size: 22px;
+    font-size: 1.375em;
     color: #fff;
     font-weight: bold;
 }
 
 .order .col-1-4 {
-    margin-right: 20px;
-    width: 220px;
-    min-height: 550px;
+    margin-right: 1.25em;
+    width: 13.75em;
+    min-height: 34.375em;
     text-align: center;
     line-height: 2.857;
 }
@@ -1025,35 +1042,35 @@ a:hover .icon {
 }
 
 sup {
-    font-size: 36px;
+    font-size: 0.6em;
     vertical-align: super;
 }
 
 .order .col-1-4 h5 {
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: bold;
     color: #333;
     text-align: center;
 }
 
 sub {
-    font-size: 24px;
+    font-size: 0.4em;
     font-weight: normal;
 }
 
 .order .col-1-4 p {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #333;
 }
 
 .order .col-1-4 .order_button {
     border: 1px solid #333;
     border-radius: 4px;
-    width: 124px;
+    width: 7.75em;
     margin: auto;
-    margin-top: 40px;
-    height: 40px;
-    line-height: 40px;
+    margin-top: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
 }
 
 .order .col-1-4 .order_button a {
@@ -1065,7 +1082,7 @@ sub {
 }
 
 .order .col-1-4 .free_trial {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #999;
     line-height: 3.636;
     text-transform: uppercase;
@@ -1080,20 +1097,21 @@ sub {
 .quote {
     background-image: url("../images/bcgrndtwitter2.png");
     background-repeat: no-repeat;
-    min-height: 830px;
-    margin-top: -254px;
+    background-size: 100% 100%;
+    min-height: 51.875em;
+    margin-top: -13em;
 }
 
 .quote .author {
-    padding-top: 65px;
+    padding-top: 4.0625em;
 }
 
 .quote .nav_circle {
-    margin-top: 35px;
+    margin-top: 2.1875em;
 }
 
 .quote i {
-    padding-bottom: 75px;
+    padding-bottom: 0.75em;
 }
 
 /*
@@ -1103,21 +1121,21 @@ sub {
 */
 
 .get_in_touch {
-    min-height: 1515px;
+    min-height: 94.6875em;
 }
 
 .get_in_touch .about_us_logo, 
 .get_in_touch .lines,
 .get_in_touch .title div, 
 .get_in_touch .title p {
-    padding-top: 180px;
-    margin-bottom: 165px;
+    padding-top: 11.25em;
+    margin-bottom: 10.3125em;
 }
 
 form {
-    margin-bottom: 150px;
-    width: 550px;
-    min-height: 290px;
+    margin-bottom: 9.375em;
+    width: 34.375em;
+    min-height: 18.125em;
     float: left;
     clear: left;
 }
@@ -1127,79 +1145,79 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 18px;
+    margin-bottom: 0.625em;
+    padding: 0.9375em 1.125em;
 }
 
 .message_group input:first-child {
-    margin-right: 10px;
+    margin-right: 0.625em;
 }
 
 .message_group input {
-    width: 261px;
-    height: 48px;
+    width: 19.6em;
+    height: 3em;
     display: inline-block;
 }
 
 .message_group .subject {
-    width: 536px;
+    width: 40em;
     display: block;
 }
 
 .message_group textarea {
-    width: 536px;
-    height: 158px;
+    width: 40em;
+    height: 12em;
 }
 
 .send_btn {
-    height: 50px;
-    width: 145px;
+    height: 3.125em;
+    width: 9.0625em;
     color: #fff;
     background-color: #0cf;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     border: 1px solid #0cf;
     border-radius: 4px;
 }
 
 .addit_info {
     float: left;
-    width: 340px;
+    width: 21.25em;
     text-align: left;
-    margin-left: 25px;
+    margin-left: 1.5625em;
+}
+
+.addit_info h5, .addit_info p {
+    font-size: 1em;
 }
 
 .addit_info h5 {
-    font-size: 16px;
     color: #333;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
     text-transform: uppercase;
 }
 
 .addit_info p {
-    font-size: 16px;
     color: #666;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
     line-height: 1.375;
 }
 
 .addit_info .contacts p {
-    font-size: 16px;
-    color: #666;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .addit_info .contacts p i {
-    font-size: 24px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+    font-size: 1.5em;
+    padding-right: 0.625em;
+    padding-bottom: 0.41667em;
 }
 
 #map {
-    width: 1534px;
-    height: 550px;
-    margin-bottom: 5px;
+    width: 100%;
+    height: 34.375em;
+    margin-bottom: 0.3125em;
 }
 
 /*
@@ -1209,21 +1227,21 @@ form {
 */
 
 .footer {
-    min-height: 179px;
+    min-height: 11.1875em;
 }
 
 .social_media {
-    min-height: 119px;
+    min-height: 7.4375em;
     background-color: #2f2e2e;
     text-align: center;
-    line-height: 119px;
+    line-height: 7.4375em;
 }
 
 .social_media a {
     text-decoration: none;
-    font-size: 35px;
+    font-size: 2.1875em;
     color: #fff;
-    padding-right: 25px;
+    padding-right: 0.7143em;
 }
 
 .social_media a:last-child {
@@ -1231,12 +1249,12 @@ form {
 }
 
 .rights {
-    min-height: 60px;
+    min-height: 3.75em;
     background-color: #0cf;
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 3.75em;
     text-align: center;
 }
 
