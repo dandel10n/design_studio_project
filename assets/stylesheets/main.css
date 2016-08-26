@@ -53,21 +53,14 @@ table {
 */
 
 @viewport {
-  width: device-width;
-  zoom: 1;
+    width: device-width;
+    zoom: 1;
 }
 
 body {
     background: #fff;
     font-family: "Lato", sant-serif;
 }
-
-
-/*@media screen and (min-width: 400px)  {...}
-@media screen and (min-width: 600px)  {...}
-@media screen and (min-width: 1000px) {...}
-@media screen and (min-width: 1400px) {...}*/
-
 
 /*
   ========================================
@@ -86,13 +79,31 @@ body {
 .container {
     margin: 0;
     max-width: 100%;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .part_of_container {
-    width: 61.278%;
+    max-width: 58.75em;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 400px)  {
+    .container {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 600px)  {
+    .container {
+    font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+    font-size: 16px;
+    }
+}
+
 
 /*
  ========================================
@@ -101,10 +112,16 @@ body {
 */
 
 header {
-    background-image: url("../images/bcgrndman.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #fff;
     min-height: 64.5em;
+}
+
+@media screen and (min-width: 600px)  {
+    header {
+        background-image: url("../images/bcgrndman.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
 }
 
 .logo {
@@ -209,11 +226,15 @@ header {
     font-style: italic;
 }
 
-.about_us_logo h2, .about_us_logo h3 {
+.about_us_logo h2,
+.about_us_logo h3 {
     text-align: left;
 }
 
-.about_us_logo, .lines, .title div, .title p {
+.about_us_logo,
+.lines,
+.title div,
+.title p {
     float: left;
     padding-top: 7.5em;
     margin-bottom: 4.6875em;
@@ -223,7 +244,8 @@ header {
     padding-left: 1.875em;
 }
 
-.title p, .our_team .title p{
+.title p,
+.our_team .title p{
     font-size: 1em;
     color: #666;
     line-height: 1.25;
@@ -306,7 +328,7 @@ header {
     padding-right: 1.5625em;
 }
 
-.part_of_focus h2, 
+.part_of_focus h2,
 .part_of_focus p {
     line-height: 1.2;
     text-align: left;
@@ -623,27 +645,37 @@ a:hover .icon {
     min-height: 91.875em;
 }
 
-.our_work  .about_us_logo, .our_work  .lines, .our_work .title p {
+.our_work  .about_us_logo,
+.our_work  .lines,
+.our_work .title p {
     margin-bottom: 7.1875em;
     padding-top: 11.25em;
 }
 
 .case_studies {
     clear: both;
+    max-width: 95.75em;
+    margin: auto;
 }
 
 .one_case_study {
     display: inline-block;
-    padding-right: 2.1875em;
-    padding-left: 1px;
-    padding-bottom: 2.1875em;
+    margin-right: 2.1875em;
+    margin-bottom: 2.1875em;
     position: relative;
+    width: 484px;
+    overflow: hidden;
 }
 
+@media screen and (min-width: 1000px)  {
+    .one_case_study {
+        width: auto;
+    }
+}
 
 .one_case_study:nth-child(3),
 .one_case_study:last-child  {
-    padding-right: 1px;
+    margin-right: 0;
 }
 
 .case_study_discr {
@@ -653,12 +685,9 @@ a:hover .icon {
     bottom: 0;
     right: 0;
     margin: auto;
-    padding-right: 2.1875em;
-    padding-bottom: 2.25em;
     text-align: center;
     height: 16.875em;
     margin-top: 6.6875em;
-    margin-bottom: 6.6875em;
 }	
 
 .case_study_discr h4 {
@@ -1007,7 +1036,8 @@ a:hover .icon {
     background-color: #eaeaea;
 }
 
-.prices  .about_us_logo, .prices  .lines, .prices .title p {
+.prices  .about_us_logo,
+.prices  .lines, .prices .title p {
     margin-bottom: 7.8125em;
     padding-top: 12.8125em;
 }
@@ -1124,9 +1154,9 @@ sub {
     min-height: 94.6875em;
 }
 
-.get_in_touch .about_us_logo, 
+.get_in_touch .about_us_logo,
 .get_in_touch .lines,
-.get_in_touch .title div, 
+.get_in_touch .title div,
 .get_in_touch .title p {
     padding-top: 11.25em;
     margin-bottom: 10.3125em;
