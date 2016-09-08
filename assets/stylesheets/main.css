@@ -76,30 +76,29 @@ body {
             box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}
+
 .container {
     margin: 0;
     max-width: 100%;
-    font-size: 10px;
 }
 
 .part_of_container {
-    max-width: 58.75em;
+    max-width: 58.75rem;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 400px)  {
-    .container {
-        font-size: 12px;
-    }
 }
 @media screen and (min-width: 600px)  {
-    .container {
+    html {
     font-size: 14px;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .container {
+    html {
     font-size: 16px;
     }
 }
@@ -113,20 +112,13 @@ body {
 
 header {
     background-color: #fff;
-    min-height: 64.5em;
-}
-
-@media screen and (min-width: 600px)  {
-    header {
-        background-image: url("../images/bcgrndman.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
+    min-height: 64.5rem;
+    background: url("../images/bcgrndman.png")100% 100% no-repeat;
+    background-size: cover;
 }
 
 .logo {
-    padding-top: 1.875em;
-    margin-left: 17.5em;
+    display: none;
 }
 
 .header_words {
@@ -137,13 +129,13 @@ header {
 
 .big_logo {
     margin: auto;
-    width: 12em;
-    padding-bottom: 3.75em;
+    width: 12rem;
+    padding-bottom: 3.75rem;
 }
 
 .header_words h2 {
     text-transform: uppercase;
-    padding-bottom: 2.5em;
+    padding-bottom: 2.5rem;
     font-weight: bold;
 }
 
@@ -154,14 +146,22 @@ header {
     color: #fff;
     margin: auto;
     width: 90%;
-    font-size: 1.375em;
+    font-size: 1.375rem;
     text-shadow: 0 0 10px black;
 }
 	
 .scroll {
     margin: auto;
-    width: 2.875em;
-    padding-top: 7.75em;
+    width: 2.875rem;
+    padding-top: 7.75rem;
+}
+
+@media screen and (min-width: 600px)  {
+    .logo {
+        display: inline-block;
+        padding-top: 1.875rem;
+        margin-left: 20%;
+    }
 }
 
 /*
@@ -171,17 +171,17 @@ header {
 */
 
 .nav_header {
-    font-size: 1em;
+    font-size: 1rem;
     float: right;
-    margin-right: 22em;
-    margin-top: -1.25em;
-    margin-bottom: 10em;
+    margin-right: 10%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
     text-shadow: 0 0 10px black;
 }
 
 .nav_header li {
     display: inline-block;
-    margin: 0 1.25em;
+    margin: 0 1.25rem;
     vertical-align: top;
 }
 
@@ -197,6 +197,14 @@ header {
     text-decoration: none;
     color: #fff;
 }
+
+/*@media screen and (min-width: 600px)  {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}*/
 
 /*
   ========================================
