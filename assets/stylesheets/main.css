@@ -514,7 +514,7 @@ a:hover .icon {
 
 @media screen and (min-width: 1000px){
         .focus {
-            margin: 5.625em 0 0 0;
+            margin: 5.625rem 0 0 0;
         }
 }
 
@@ -526,76 +526,106 @@ a:hover .icon {
 
 .our_skills {
     background-color: #f7f7f7;
-    min-height: 58.1875em;
+    min-height: 75rem;
 }
 	
 .our_skills h4,
 .fun_facts h4,
 .addit_work h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #666;
     text-transform: uppercase;
-    line-height: 1.2;
     text-align: center;
-    padding-top: 5.208em;
-    padding-bottom: 2.208em;
+    padding-top: 5rem;
+    padding-bottom: 3.3125rem;
 }
 
 .our_skills p,
 .fun_facts p {
-    font-size: 1em;
+    font-size: 1rem;
     color: #666;
     line-height: 1.25;
     margin: auto;
     text-align: center;
-    width: 37%;
-    min-height: 2.1875em;
-    padding-bottom: 6.5625em;
+    width: 90%;
+    padding-bottom: 4rem;
 }
 
 .our_skills .part_of_container .col-1-4 h4 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: #333;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
 }
 
 .our_skills .part_of_container .col-1-4 p {
-    font-size: 1em;
-    color: rgb(153, 153, 153);
+    font-size: 1rem;
+    color: #999;
     line-height: 1.2;
     text-align: center;
-    width: 12.5625em;
-    min-height: 3.3125em;
+    width: 90%;
+    min-height: 3.3125rem;
 }
 
 .col-1-4 {
     display: inline-block;
     vertical-align: top;
-    width: 24%;
+    width: 49%;
     position: relative;
 }
 
 .col-1-4 img {
     display: block;
-    width: 9.625em;
+    width: 9.625rem;
     margin: auto;
 }
 
 .col-1-4 span {
-    font-size: 1.875em;
+    font-size: 1.875rem;
     color: #333;
     font-weight: bold;
-    line-height: 1.2;
     text-align: left;
+    line-height: 1.2;
     position: absolute;
     top: 14%;
     right: 37%;
+}
+
+@media screen and (min-width: 600px){
+    .our_skills h4,
+    .fun_facts h4,
+    .addit_work h4 {
+        padding-top: 7.8125rem;
+        padding-bottom: 3.3125rem;
+    }
+
+    .our_skills p,
+    .fun_facts p {
+        width: 37%;
+        min-height: 2.1875rem;
+        padding-bottom: 6.5625rem;
+    }
+
+    .col-1-4 {
+        display: inline-block;
+        vertical-align: top;
+        width: 24%;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .our_skills {
+        min-height: 58.1875rem;
+    }
+    
+    .col-1-4 {
+        width: 24%;
+    }
 }
 
 /*
