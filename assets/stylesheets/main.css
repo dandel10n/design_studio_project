@@ -353,10 +353,7 @@ header {
 
     .about_us_nav li {
         line-height: 3.625rem;
-        text-align: center;
         width: 9.375rem;
-        font-size: 1.25rem;
-        text-transform: uppercase;
         display: inline-block;
         height: 3.625rem;
         border-left: 1px solid white;
@@ -426,6 +423,7 @@ header {
     display: inline-block;
     min-height: 11rem;
     border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 1rem;
 }
 
 .part_of_focus h2 {
@@ -439,7 +437,8 @@ header {
 .part_of_focus p {
     font-size: 1rem;
     color: #999;
-    padding-right: 1.5625rem;
+    padding-right: 4%;
+    padding-left: 4%;
 }
 
 .part_of_focus h2,
@@ -487,11 +486,17 @@ a:hover .icon {
 @media screen and (min-width: 600px){
     .focus {
         max-width: 95%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
     }
 
     .part_of_focus {
         width: 50%;
-        float: left;
     }
 
     .part_of_focus:nth-child(odd) {
@@ -526,7 +531,7 @@ a:hover .icon {
 
 .our_skills {
     background-color: #f7f7f7;
-    min-height: 75rem;
+    min-height: 65rem;
 }
 	
 .our_skills h4,
@@ -552,7 +557,8 @@ a:hover .icon {
     padding-bottom: 4rem;
 }
 
-.our_skills .part_of_container .col-1-4 h4 {
+.our_skills .col-1-4 h4,
+.team .col-1-4 h4 {
     font-size: 1.25rem;
     color: #333;
     font-weight: bold;
@@ -562,7 +568,8 @@ a:hover .icon {
     padding-bottom: 1.25rem;
 }
 
-.our_skills .part_of_container .col-1-4 p {
+.our_skills .col-1-4 p,
+.team .col-1-4 p {
     font-size: 1rem;
     color: #999;
     line-height: 1.2;
@@ -575,27 +582,34 @@ a:hover .icon {
     display: inline-block;
     vertical-align: top;
     width: 49%;
-    position: relative;
 }
 
-.col-1-4 img {
-    display: block;
+.percent_row {
+    position: relative;
     width: 9.625rem;
+    height: 9.625rem;
     margin: auto;
 }
 
-.col-1-4 span {
+.percent_row img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+}
+
+.percent_row span {
+    position: absolute;
     font-size: 1.875rem;
     color: #333;
     font-weight: bold;
-    text-align: left;
-    line-height: 1.2;
-    position: absolute;
-    top: 14%;
-    right: 37%;
+    top: 37%;
+    left: 37%;
 }
 
 @media screen and (min-width: 600px){
+
     .our_skills h4,
     .fun_facts h4,
     .addit_work h4 {
@@ -611,20 +625,13 @@ a:hover .icon {
     }
 
     .col-1-4 {
-        display: inline-block;
-        vertical-align: top;
         width: 24%;
-        position: relative;
     }
 }
 
 @media screen and (min-width: 1000px){
     .our_skills {
         min-height: 58.1875rem;
-    }
-    
-    .col-1-4 {
-        width: 24%;
     }
 }
 
@@ -635,64 +642,90 @@ a:hover .icon {
 */
 
 .our_team {
-    background-image: url("../images/bcgrndteam.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top;
-    min-height: 67.625em;
-    margin-top: -10.3125em;
-    padding-top: 8em;
+    background-color: #333;
+    padding-top: 4rem;
+    min-height: 115rem;
 }
 
 .our_team .title span,
 .our_team .title p,
-.our_team .title  h3 {
+.our_team .title  h3,
+.team .col-1-4 h4,
+.team .col-1-4 p {
     color: #fff;
 }
 
 .team {
-    clear: both;
+    width: 90%;
+    margin: auto;
+}
+
+.team .col-1-4 {
+    width: 100%;
+}
+
+.team .col-1-4 h4,
+.team .col-1-4 h6,
+.team .col-1-4 p {
+    text-align: center;
+}
+
+.team .col-1-4 h4 {
+    padding-top: 1.875rem;
+    padding-bottom: 0.3125rem;
+}
+
+.team .col-1-4 h6 {
+    font-size: 0.75rem;
+    color: #00ccff;
+    padding-left: 2.375rem;
+    padding-bottom: 1.25rem;
+}
+
+.team .col-1-4 p {
+    min-height: 2.5rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    margin: auto;
 }
 
 .photos {
     border-radius: 50%;
-    width: 11.1875em;
-    height: 11.25em;
+    width: 11.1875rem;
+    height: 11.25rem;
+    margin: auto;
+    position: relative;
 }
 
-.photos img{
+.photos img,
+.social_media_links {
+    position: absolute;
+    border-radius: inherit;
     width: inherit;
     height: inherit;
-    margin: 0;
-    position: relative;
-    border-radius: inherit;
+    top: 0;
+    left: 0;
 }
 
 .social_media_links {
-    width: 11.1875em;
-    height: 11.25em;
-    position: absolute;
     background-color: #000;
     opacity: 0.89;
-    top: 0;
-    left: 0;
-    line-height: 11.25em;
+    line-height: 11.25rem;
     display: none;
-    border-radius: inherit;
 }
     
 .social_media_links a {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: #b1afad;
-    padding-right: 0.944em;
+    padding-right: 1.0625rem;
     text-decoration: none;
 }
 
 .social_media_links a:first-child {
-    padding-left: 1.556em;
+    padding-left: 1.75rem;
 }
 
-.team  .photos:hover .social_media_links{
+.team  .photos:hover .social_media_links {
     display: block;
 }
 
@@ -700,34 +733,44 @@ a:hover .icon {
     color: #0cf;
 }
 
-.team .col-1-4 h4 {
-    font-size: 1.25em;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    padding-top: 1.5em;
-    padding-bottom: 0.25em;
+@media screen and (min-width: 600px){
+    .our_team {
+        background: url("../images/bcgrndteam.png") 100% 100% no-repeat;
+        background-size: cover;
+        min-height: 90rem;
+        margin-top: -10.5rem;
+        padding-top: 7rem;
+    }
+
+    .team .col-1-4 {
+        width: 49%;
+    }
+
 }
 
-.team .col-1-4 h6 {
-    font-size: 0.75em;
-    color: #00ccff;
-    line-height: 1.2;
-    text-align: left;
-    padding-left: 3.167em;
-    padding-bottom: 1.667em;
-}
+@media screen and (min-width: 1000px){
 
-.team .col-1-4 p {
-    font-size: 0.75em;
-    color: #fff;
-    line-height: 1.2;
-    text-align: left;
-    width: 85%;
-    min-height: 3.334em;
-    margin: 0;
+    .our_team {
+        min-height: 70rem;
+    }
+
+    .team {
+        clear: both;
+    }
+
+    .team .col-1-4 h4,
+    .team .col-1-4 h6,
+    .team .col-1-4 p {
+        text-align: left;
+    }
+
+    .team .col-1-4 {
+        width: 24%;
+    }
+
+    .photos {
+        margin: 0;
+    }
 }
 
 /*
@@ -736,8 +779,14 @@ a:hover .icon {
   ========================================
 */
 
+.our_sevices .title:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .our_sevices {
-    min-height: 63.125em;
+    min-height: 63.125rem;
 }
 
 .our_sevices .part_of_focus h2 {
