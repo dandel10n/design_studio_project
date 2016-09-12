@@ -311,6 +311,7 @@ header {
     background-color: #eaeaea;
     width: 90%;
     margin: auto;
+    margin-bottom: 1rem;
 }
 
 .about_us_nav li {
@@ -403,7 +404,7 @@ header {
     }
 
     .about_us_nav {
-        margin: 0;
+        margin: 0 0 5.625rem 0;
     }
 }
 
@@ -416,7 +417,6 @@ header {
 .focus {
     max-width: 90%;
     margin: auto;
-    margin-top: 3rem;
 }
 
 .part_of_focus {
@@ -433,7 +433,7 @@ header {
     padding-top: 2.1875rem;
     padding-bottom: 1rem;
 }
-	
+
 .part_of_focus p {
     font-size: 1rem;
     color: #999;
@@ -517,10 +517,10 @@ a:hover .icon {
     }
 }
 
-@media screen and (min-width: 1000px){
-        .focus {
-            margin: 5.625rem 0 0 0;
-        }
+@media screen and (min-width: 1000px) {
+    .focus {
+        margin: 0;
+    }
 }
 
 /*
@@ -547,7 +547,7 @@ a:hover .icon {
 }
 
 .our_skills p,
-.fun_facts p {
+.fun_facts > p {
     font-size: 1rem;
     color: #666;
     line-height: 1.25;
@@ -580,7 +580,7 @@ a:hover .icon {
 
 .col-1-4 {
     display: inline-block;
-    vertical-align: top;
+    /*vertical-align: top;*/
     width: 49%;
 }
 
@@ -618,7 +618,7 @@ a:hover .icon {
     }
 
     .our_skills p,
-    .fun_facts p {
+    .fun_facts > p {
         width: 37%;
         min-height: 2.1875rem;
         padding-bottom: 6.5625rem;
@@ -756,6 +756,7 @@ a:hover .icon {
 
     .team {
         clear: both;
+        margin: 0;
     }
 
     .team .col-1-4 h4,
@@ -786,7 +787,7 @@ a:hover .icon {
 }
 
 .our_sevices {
-    min-height: 63.125rem;
+    min-height: 65rem;
 }
 
 .our_sevices .part_of_focus h2 {
@@ -797,6 +798,18 @@ a:hover .icon {
     background-color: #00ccff;
 }
 
+@media screen and (min-width: 600px) {
+    .our_sevices {
+        min-height: 55rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .our_sevices {
+        min-height: 63.125rem;
+    }
+}
+
 /*
   ========================================
   Fun Facts
@@ -804,49 +817,120 @@ a:hover .icon {
 */
 
 .fun_facts {
-    min-height: 48.75em;
+    min-height: 52rem;
     background-color: #f7f7f7;
 }
 
-.fun_facts p {
+.fun_facts > p {
     padding-bottom: 0;
 }
 
-.fun_blocks .col-1-4 {
-    min-height: 16.5625em;
-    border: 1px solid #e2e2e2;
-    width: 15em;
-    text-align: center;
-    background-color: #fff;
-    margin-top: 4.6875em;
+.fun_blocks {
+    width: 90%;
+    margin: auto;
+    margin-top: 4.6875rem;
 }
 
-.fun_blocks .col-1-4:first-child,
-.fun_blocks .col-1-4:last-child {
-    width: 14.375em;
+.fun_blocks .col-1-4 {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    background-color: #fff;
 }
 
 .fun_icon {
-    font-size: 4.375em;
+    font-size: 4.375rem;
     color: #333;
-    padding-top: 0.5714em;
-    padding-bottom: 0.1429em;
+    float: left;
+    padding-top: 2%;
+    padding-left: 5%;
 }
 
 .fun_blocks .col-1-4 p {
-    font-size: 1.375em;
+    font-size: 1.375rem;
     color: #0cf;
     width: 80%;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
-.fun_blocks .col-1-4 p.index {
-    font-size: 3.25em;
+.fun_blocks .col-1-4 .index {
+    font-size: 3.25rem;
     color: #333;
-    min-height: 1em;
     margin-top: 0;
-    margin-bottom: 0.769em;
     font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+    .fun_blocks .col-1-4 {
+        height: 84px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fun_icon,
+    .fun_blocks .index,
+    .fun_blocks  .col-1-4 p {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        line-height: 84px;
+    }
+
+    .fun_icon {
+        float: none;
+        padding-left: 5%;
+    }
+
+    .fun_blocks .col-1-4 p {
+        width: 30%;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .fun_facts {
+        min-height: 48.75rem;
+    }
+
+    .fun_blocks {
+        width: 58.75rem;
+    }
+
+    .fun_blocks .col-1-4 {
+        display: inline-block;
+        min-height: 16.5625rem;
+        width: 15rem;
+    }
+
+    .fun_blocks .col-1-4:first-child,
+    .fun_blocks .col-1-4:last-child {
+        width: 14.375rem;
+    }
+
+    .fun_icon,
+    .fun_blocks .index,
+    .fun_blocks .col-1-4  p {
+        display: block;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .fun_blocks  .col-1-4 p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .fun_icon {
+        padding: 2.5rem 0 0.625rem 0;
+    }
+
+    .fun_blocks .col-1-4 .index {
+        margin-bottom: 2.5rem;
+    }
 }
 
 /*
