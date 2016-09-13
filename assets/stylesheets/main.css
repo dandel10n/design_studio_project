@@ -396,7 +396,7 @@ header {
 
     .title p,
     .our_team .title p {
-        width: 60%;
+        width: 54%;
         display: inline-block;
         padding-left: 1.875rem;
         margin-top: 3.125rem;
@@ -968,7 +968,7 @@ a:hover .icon {
 }
 
 @media screen and (min-width: 363px)  {
-    .one_case_study.img_4 img {
+    .one_case_study.large_img img {
         max-width: 30.25rem;
     }
 }
@@ -1034,17 +1034,14 @@ a:hover .icon {
         object-fit: cover;
     }
 
-    .img_1 {order: 1;}
-    .img_2 {order: 2;}
-    .img_3 {order: 3;}
-    .img_5 {order: 4;}
-    .img_4 {order: 5;}
+    .one_case_study {order: 0;}
 
-    .one_case_study.img_4 {
+    .one_case_study.large_img {
+        order: 99;
         min-width: 598px;
     }
 
-    .one_case_study.img_4 img {
+    .one_case_study.large_img img {
         width: 598px;
         max-width: 630px;
     }
@@ -1092,11 +1089,11 @@ a:hover .icon {
         height: 484px;
     }
 
-     .one_case_study.img_4 {
+     .one_case_study.large_img {
          min-width: 990px;
      }
 
-     .one_case_study.img_4 img {
+     .one_case_study.large_img img {
         width: 990px;
         max-width: 1007px;
     }
@@ -1118,10 +1115,7 @@ a:hover .icon {
         width: 20.8125rem;
         font-size: 1.875rem;
     }
-
-    .one_case_study.img_4 img {
-        max-width: 1007px;
-    }
+}
 
 @media screen and (min-width: 1495px)  {
 
@@ -1129,10 +1123,9 @@ a:hover .icon {
         max-width: 95.875rem;
     }
 
-    .one_case_study .img_4 {
-        order: 4;
+    .one_case_study.large_img {
+        order: 0;
     }
-    .img_5 {order: 5}
 }
 
 /*
@@ -1142,49 +1135,47 @@ a:hover .icon {
 */
 
 .addit_work {
-    min-height: 89.1875em;
+    min-height: 165rem;
     background-color: #f7f7f7;
 }
 
 .addit_work h4 {
-    padding-top: 5.2083em;
-    padding-bottom: 0.8333em;
+    padding-top: 7.8125rem;
+    padding-bottom: 1.25rem;
 }
 
 .addit_work p {
-    font-size: 1.5em;
+    font-size: 1.2rem;
     color: #333;
+    width: 80%;
+    margin: auto;
     line-height: 1.2;
     text-align: center;
 }
 
 .nav_section {
-    font-size: 0.875em;
-    line-height: 1.2;
-    text-align: left;
-    width: 29.6429em;
-    margin: auto;
-    margin-top: 6.7857em;
-    margin-bottom: 5.3572em;
+    font-size: 1rem;
+    width: 25rem;
+    margin: 3rem auto 4rem auto;
 }
 
 .nav_section li {
-    display: inline-block;
-    margin-right: 0.3572em;
-    vertical-align: top;
-}
-
-.nav_section li:last-child {
-    margin-right: 0;
+    background-color: #fff;
+    width: 299px;
+    margin: auto;
 }
 
 .nav_section li a {
     display: block;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: 0.5714em 0.9286em;
+    border-bottom: none;
+    padding: 0.5rem 0.8125rem;
     text-decoration: none;
     color: #666;
+}
+
+.nav_section li:last-child a {
+    border-bottom: 1px solid #ccc;
 }
 
 .nav_section li:hover,
@@ -1193,36 +1184,29 @@ a:hover .icon {
 }
 
 .addit_work_block {
-    display: inline-block;
-    width: 18.6875em;
-    height: 17.75em;
-    margin-right: 1.25em;
-}
-
-.addit_work_block:last-child,
-.addit_work_block:nth-child(3) {
-    margin-right: 0;
+    width: 299px;
+    height: 20rem;
+    margin: auto;
 }
 
 .addit_work_block h5 {
-    font-size: 1em;
+    font-size: 1rem;
     color: #333;
     font-weight: bold;
-    line-height: 1.2;
     text-align: center;
-    padding-top: 1.5625em;
-    padding-bottom: 0.9375em;
+    padding-top: 1.5625rem;
+    padding-bottom: 0.9375rem;
 }
 
 .addit_work_block p {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     color: #333;
     text-align: center;
 }
 
 .images {
-    width: 18.6875em;
-    height: 10.0625em;
+    width: 299px;
+    height: 161px;
     position: relative;
 } 
 
@@ -1234,7 +1218,7 @@ a:hover .icon {
     left: 0;
     background-color: #000;
     opacity: 0.80;
-    line-height: 10.0625em;
+    line-height: 161px;
     text-align: center;
     display: none;
 }
@@ -1244,9 +1228,9 @@ a:hover .icon {
 }
 
 .search_links a {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: #b1afad;
-    padding-right: 0.9444em;
+    padding-right: 1.0625rem;
     text-decoration: none;
     margin: auto;
 }
@@ -1259,16 +1243,94 @@ a:hover .icon {
     text-decoration: none;
     color: #fff;
     display: block;
-    font-size: 0.875em;
-    width: 10em;
-    height: 2.3572em;
+    font-size: 0.875rem;
+    width: 8.75rem;
+    height: 2.0625rem;
     margin: auto;
     text-transform: uppercase;
-    line-height: 2.3572em;
+    line-height: 2.0625rem;
     text-align: center;
     background-color: #0cf;
     border-radius: 2px;
-    margin-top: 2.8572em;
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .addit_work {
+        min-height: 105rem;
+    }
+
+    .nav_section {
+        font-size: 0.875rem;
+        width: 25.9375rem;
+        margin: 5.9375rem auto 4.6875rem auto;
+    }
+
+    .nav_section li {
+        width: auto;
+        display: inline-block;
+        background-color: #f7f7f7;
+        margin: 0 0.3125rem 0 0;
+    }
+
+    .nav_section li:last-child {
+        margin-right: 0;
+    }
+
+    .nav_section li a {
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 0.5rem 0.8125rem;
+        text-decoration: none;
+        color: #666;
+    }
+
+    .addit_work .part_of_container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 800px)  {
+
+    .addit_work {
+    min-height: 85rem;
+    }
+
+    .addit_work_block {
+        width: 265px;
+    }
+
+    .addit_work_block img,
+    .images {
+        width: 260px;
+        height: 161px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1000px)  {
+    .addit_work {
+        min-height: 85rem;
+    }
+
+     .addit_work_block {
+        width: 299px;
+    }
+
+    .addit_work_block img,
+    .images {
+        width: 299px;
+    }
 }
 
 /*
@@ -1277,51 +1339,49 @@ a:hover .icon {
   ========================================
 */
 
-.twitter {
-    background-image: url("../images/bcgrndtwitter2.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 51.875em;
-    margin-top: -10.3125em;
+.twitter,
+.quote{
+    background-color: #333;
+    min-height: 40rem;
 }
 
 .twitter i,
 .quote i  {
     display: block;
-    font-size: 6.25em;
+    font-size: 6.25rem;
     color: #0cf;
     text-align: center;
-    padding-top: 2.40em;
-    padding-bottom: 0.95em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .twitter p,
 .quote p {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: #fff;
     line-height: 1.2;
-    width: 47.2222em;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
 
 .nav_circle {
     text-align: center;
-    width: 4.0625em;
-    height: 1.25em;
+    width: 4.0625rem;
+    height: 1.25rem;
     margin: auto;
-    margin-top: 6.0625em;
-    margin-bottom: 1.875em;
+    margin-top: 6.0625rem;
+    margin-bottom: 1.875rem;
 }
 
 .nav_circle a {
     display: inline-block;
     text-decoration: none;
-    width: 0.625em;
-    height: 0.625em;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
     background-color: #ccc;
-    margin-right: 0.3125em;
+    margin-right: 0.3125rem;
 }
 
 .nav_circle a:last-child {
@@ -1335,7 +1395,7 @@ a:hover .icon {
 
 .twitter span {
     display: block;
-    font-size: 1.375em;
+    font-size: 1.375rem;
     color: #fff;
     text-align: center;
 }
@@ -1345,6 +1405,22 @@ a:hover .icon {
     color: #26809c;
 }
 
+@media screen and (min-width: 600px)  {
+    .twitter,
+    .quote {
+        background: url("../images/bcgrndtwitter2.png") 100% 100% no-repeat;
+        background-size: cover;
+        min-height: 51.875rem;
+        margin-top: -10.3125rem;
+    }
+
+    .twitter i,
+    .quote i  {
+        padding-top: 12rem;
+        padding-bottom: 5.9375rem;
+    }
+}
+
 /*
   ========================================
   Testimony
@@ -1352,88 +1428,124 @@ a:hover .icon {
 */
 
 .our_testimonial {
-    min-height: 59.0625em;
+    min-height: 59.0625rem;
 }
 
 .logos {
-    clear: both;
-    margin-bottom: 3.625em;
-    padding-top: 2.8125em;
-}
-
-.one_logo {
-    height: 3.8125em;
-    display: inline-block;
-    margin-right: 2.5em;
-}
-
-.one_logo:first-child {
-    margin-left: 1.25em;
-}
-
-.one_logo:last-child {
-    margin-right: 0;
+    display: none;
 }
 
 .column {
-    width: 18.75em;
-    min-height: 12.5em;
-    display: inline-block;
+    width: 90%;
+    min-height: 12.5rem;
     border: 1px solid #efefef;
     background-color: #f7f7f7;
     border-radius: 4px;
-    margin-right: 1.25em;
-    padding-top: 1.5625em;
-    padding-left: 0.625em;	
-    padding-bottom: 0.625em;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-top: 1.5625rem;
+    padding-left: 0.625rem;	
+    padding-bottom: 0.625rem;
     position: relative;
 }
 
-.column:last-child {
-    margin-right: 0;
-}
-
 .column p {
-    font-size: 1em;
+    font-size: 1rem;
     color: #999;
     font-style: italic;
     line-height: 1.25;
     text-align: left;
-    width: 15.1875em;
+    width: 90%;
 }
 
 .sign {
     position: absolute;
-    height: 4.0625em;
-    width: 17.1875em;
-    bottom: 0.625em;
-    left: 0.625em;
+    height: 4.0625rem;
+    width: 17.1875rem;
+    bottom: 1.5rem;
+    left: 0.625rem;
     border-top: 2px solid #cacaca;
-    padding-top: 0.9375em;
-    padding-bottom: 0.3125em;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.3125rem;
 }
 
 .sign img {
     float: left;
-    margin-right: 0.625em;
-    padding-left: 0.125em;
+    margin-right: 0.625rem;
+    padding-left: 0.125rem;
 }
 
 .sign div {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     color: #09f;
     text-align: left;
-    padding-top: 0.5em;
+    padding-top: 0.4375rem;
 }
 
 .sign span {
-    font-size: 0.75em;
+    font-size: 0.75rem;
     color: #999;
     text-align: left;
 }
 
 .our_testimonial .nav_circle {
-    margin-top: 4.375em;
+    margin-top: 4.375rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .columns {
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .column {
+        width: 30%;
+        min-height: 15rem;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+    .sign {
+        bottom: 1rem;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .logos {
+        display: block;
+        clear: both;
+    }
+
+    .one_logo {
+        height: 3.8125rem;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .one_logo:first-child {
+        margin-left: 1rem;
+    }
+
+    .one_logo:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .columns {
+        width: 100%;
+    }
+
+    .one_logo {
+        margin-right: 1.5rem;
+    }
 }
 
 /*
@@ -1534,14 +1646,6 @@ sub {
   Quote
   ========================================
 */
-
-.quote {
-    background-image: url("../images/bcgrndtwitter2.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 51.875em;
-    margin-top: -13em;
-}
 
 .quote .author {
     padding-top: 4.0625em;
