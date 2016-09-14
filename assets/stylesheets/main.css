@@ -1410,8 +1410,8 @@ a:hover .icon {
     .quote {
         background: url("../images/bcgrndtwitter2.png") 100% 100% no-repeat;
         background-size: cover;
-        min-height: 51.875rem;
-        margin-top: -10.3125rem;
+        min-height: 54rem;
+        margin-top: -11rem;
     }
 
     .twitter i,
@@ -1444,7 +1444,7 @@ a:hover .icon {
     margin: auto;
     margin-bottom: 1rem;
     padding-top: 1.5625rem;
-    padding-left: 0.625rem;	
+    padding-left: 0.625rem;
     padding-bottom: 0.625rem;
     position: relative;
 }
@@ -1490,9 +1490,14 @@ a:hover .icon {
 
 .our_testimonial .nav_circle {
     margin-top: 4.375rem;
+    padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 600px) {
+
+    .our_testimonial {
+        min-height: 40rem;
+    }
 
     .columns {
         width: 90%;
@@ -1555,75 +1560,68 @@ a:hover .icon {
 */
 
 .prices {
-    min-height: 82.1875em;
+    min-height: 150rem;
     background-color: #eaeaea;
 }
 
-.prices  .about_us_logo,
-.prices  .lines, .prices .title p {
-    margin-bottom: 7.8125em;
-    padding-top: 12.8125em;
-}
-
-.order {
-    clear: both;
+.prices  .title {
+    padding-top: 2%;
 }
 
 .basic_plan {
-    width: 9.9091em;
+    width: 100%;
     margin: auto;
-    height: 3.6364em;
-    line-height: 3.6364em;
+    height: 5rem;
+    line-height: 5rem;
     background-color: #0cf;
     text-align: center;
     border: 1px solid #ccc;
-    font-size: 1.375em;
+    font-size: 1.375rem;
     color: #fff;
     font-weight: bold;
 }
 
 .order .col-1-4 {
-    margin-right: 1.25em;
-    width: 13.75em;
-    min-height: 34.375em;
+    display: block;
+    width: 80%;
+    margin: auto;
+    min-height: 30rem;
     text-align: center;
-    line-height: 2.857;
-}
-
-.order .col-1-4:last-child {
-    margin-right: 0;
+    line-height: 2;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
 }
 
 sup {
-    font-size: 0.6em;
+    font-size: 2.25rem;
     vertical-align: super;
 }
 
 .order .col-1-4 h5 {
-    font-size: 3.75em;
+    font-size: 3.75rem;
     font-weight: bold;
     color: #333;
     text-align: center;
 }
 
 sub {
-    font-size: 0.4em;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
 .order .col-1-4 p {
-    font-size: 0.875em;
+    font-size: 1rem;
     color: #333;
 }
 
 .order .col-1-4 .order_button {
     border: 1px solid #333;
     border-radius: 4px;
-    width: 7.75em;
+    width: 7.75rem;
     margin: auto;
-    margin-top: 2.5em;
-    height: 2.5em;
-    line-height: 2.5em;
+    margin-top: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
 }
 
 .order .col-1-4 .order_button a {
@@ -1635,10 +1633,100 @@ sub {
 }
 
 .order .col-1-4 .free_trial {
-    font-size: 0.6875em;
+    font-size: 11px;
     color: #999;
     line-height: 3.636;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 400px) {
+
+    .prices {
+        min-height: 100rem;
+    }
+
+    .order {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .order .col-1-4 {
+        width: 45%;
+        min-height: 34.375rem;
+        text-align: center;
+        line-height: 2.857;
+    }
+
+    .order .col-1-4 p {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .prices {
+        min-height: 110rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .prices {
+        min-height: 75rem;
+    }
+
+    .basic_plan {
+        width: 100%;
+    }
+
+    .order {
+        display: block;
+        width: 98%;
+        margin: auto;
+    }
+
+    .order .col-1-4 {
+        display: inline-block;
+        margin-right: 1.25rem;
+        width: 23%;
+    }
+
+    .order .col-1-4:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .prices {
+        min-height: 87.9375rem;
+    }
+
+    .prices  .about_us_logo,
+    .prices  .lines, .prices .title p {
+        margin-bottom: 7.8125rem;
+        padding-top: 12.8125rem;
+    }
+
+    .order {
+        clear: both;
+        width: 100%;
+    }
+
+    .basic_plan {
+        width: 13.625rem;
+    }
+
+    .order .col-1-4 {
+        width: 13.75rem;
+        border: none;
+    }
 }
 
 /*
@@ -1648,15 +1736,15 @@ sub {
 */
 
 .quote .author {
-    padding-top: 4.0625em;
+    padding-top: 4.57rem;
 }
 
 .quote .nav_circle {
-    margin-top: 2.1875em;
+    margin-top: 2.1875rem;
 }
 
 .quote i {
-    padding-bottom: 0.75em;
+    padding-bottom: 4.6875rem;
 }
 
 /*
