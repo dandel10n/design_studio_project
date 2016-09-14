@@ -580,7 +580,6 @@ a:hover .icon {
 
 .col-1-4 {
     display: inline-block;
-    /*vertical-align: top;*/
     width: 49%;
 }
 
@@ -605,7 +604,7 @@ a:hover .icon {
     color: #333;
     font-weight: bold;
     top: 37%;
-    left: 37%;
+    left: 35%;
 }
 
 @media screen and (min-width: 600px){
@@ -619,7 +618,7 @@ a:hover .icon {
 
     .our_skills p,
     .fun_facts > p {
-        width: 37%;
+        width: 60%;
         min-height: 2.1875rem;
         padding-bottom: 6.5625rem;
     }
@@ -1025,12 +1024,12 @@ a:hover .icon {
     }
 
     .case_studies {
-        max-width: 610px;
+        max-width: 600px;
     }
 
     .one_case_study img {
-        width: 299px;
-        height: 299px;
+        width: 298px;
+        height: 298px;
         object-fit: cover;
     }
 
@@ -1056,7 +1055,7 @@ a:hover .icon {
 
     .case_study_discr p {
         font-size: 1.2rem;
-        width: 22rem;
+        width: 21rem;
     }
 
     .case_study_discr .button {
@@ -1754,86 +1753,71 @@ sub {
 */
 
 .get_in_touch {
-    min-height: 94.6875em;
-}
-
-.get_in_touch .about_us_logo,
-.get_in_touch .lines,
-.get_in_touch .title div,
-.get_in_touch .title p {
-    padding-top: 11.25em;
-    margin-bottom: 10.3125em;
+    min-height: 94.6875rem;
 }
 
 form {
-    margin-bottom: 9.375em;
-    width: 34.375em;
-    min-height: 18.125em;
-    float: left;
-    clear: left;
+    margin-bottom: 4rem;
+    width: 100%;
+    min-height: 18.125rem;
+}
+
+form fieldset {
+    width: 90%;
+    margin: auto;
 }
 
 .message_group input,
 .message_group textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: block;
-    margin-bottom: 0.625em;
-    padding: 0.9375em 1.125em;
-}
-
-.message_group input:first-child {
-    margin-right: 0.625em;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    padding: 0.9375rem 1.125rem;
 }
 
 .message_group input {
-    width: 19.6em;
-    height: 3em;
-    display: inline-block;
-}
-
-.message_group .subject {
-    width: 40em;
-    display: block;
+    height: 3rem;
 }
 
 .message_group textarea {
-    width: 40em;
-    height: 12em;
+    height: 9.875rem;
 }
 
 .send_btn {
-    height: 3.125em;
-    width: 9.0625em;
+    height: 3.125rem;
+    width: 9.0625rem;
     color: #fff;
     background-color: #0cf;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1rem;
     border: 1px solid #0cf;
     border-radius: 4px;
+    margin-left: 5%;
 }
 
 .addit_info {
-    float: left;
-    width: 21.25em;
+    width: 90%;
     text-align: left;
-    margin-left: 1.5625em;
+    margin: auto;
+    margin-bottom: 4rem;
 }
 
-.addit_info h5, .addit_info p {
-    font-size: 1em;
+.addit_info h5,
+.addit_info p {
+    font-size: 1rem;
 }
 
 .addit_info h5 {
     color: #333;
     font-weight: bold;
-    padding-bottom: 1.25em;
+    padding-bottom: 1.25rem;
     text-transform: uppercase;
 }
 
 .addit_info p {
     color: #666;
-    padding-bottom: 2.5em;
+    padding-bottom: 2.5rem;
     line-height: 1.375;
 }
 
@@ -1842,15 +1826,100 @@ form {
 }
 
 .addit_info .contacts p i {
-    font-size: 1.5em;
-    padding-right: 0.625em;
-    padding-bottom: 0.41667em;
+    font-size: 1.5rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 0.625rem;
 }
 
 #map {
     width: 100%;
-    height: 34.375em;
-    margin-bottom: 0.3125em;
+    height: 34.375rem;
+    margin-bottom: 0.3125rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .message_group input,
+    .message_group textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 0.625rem;
+        padding: 0.9375rem 1.125rem;
+    }
+
+    .message_group input {
+        width: 48.9%;
+        height: 3rem;
+        display: inline-block;
+    }
+
+    .message_group input:first-child {
+        margin-right: 0.625rem;
+    }
+
+    .message_group .subject {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .get_in_touch {
+        min-height: 80rem;
+    }
+
+    form {
+        margin-bottom: 9.375rem;
+        width: 34.375rem;
+        min-height: 18.125rem;
+        float: left;
+        clear: left;
+    }
+
+    .message_group input,
+    .message_group textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 0.625rem;
+        padding: 0.9375rem 1.125rem;
+    }
+
+    .message_group input {
+        width: 16.3125rem;
+        height: 3rem;
+        display: inline-block;
+    }
+
+    .message_group input:first-child {
+        margin-right: 0.625rem;
+    }
+
+    .message_group .subject {
+        width: 33.5rem;
+        display: block;
+    }
+
+    .addit_info {
+        float: left;
+        width: 30%;
+        text-align: left;
+        margin-left: 1.5625rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .get_in_touch .about_us_logo,
+    .get_in_touch .lines,
+    .get_in_touch .title div,
+    .get_in_touch .title p {
+        padding-top: 11.25rem;
+        margin-bottom: 10.3125rem;
+    }
+
+    .addit_info {
+        width: 21.25rem;
+    }
 }
 
 /*
@@ -1860,21 +1929,21 @@ form {
 */
 
 .footer {
-    min-height: 11.1875em;
+    min-height: 11.1875rem;
 }
 
 .social_media {
-    min-height: 7.4375em;
+    min-height: 7.4375rem;
     background-color: #2f2e2e;
     text-align: center;
-    line-height: 7.4375em;
+    line-height: 7.4375rem;
 }
 
 .social_media a {
     text-decoration: none;
-    font-size: 2.1875em;
+    font-size: 2.1875rem;
     color: #fff;
-    padding-right: 0.7143em;
+    padding-right: 1.5625rem;
 }
 
 .social_media a:last-child {
@@ -1882,12 +1951,12 @@ form {
 }
 
 .rights {
-    min-height: 3.75em;
+    min-height: 3.75rem;
     background-color: #0cf;
-    font-size: 1em;
+    font-size: 1rem;
     color: #fff;
     font-weight: bold;
-    line-height: 3.75em;
+    line-height: 3.75rem;
     text-align: center;
 }
 
