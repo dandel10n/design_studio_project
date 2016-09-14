@@ -1906,6 +1906,10 @@ form fieldset {
         text-align: left;
         margin-left: 1.5625rem;
     }
+
+    .send_btn {
+        margin-left: 1.5%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
