@@ -632,6 +632,11 @@ a:hover .icon {
     .our_skills {
         min-height: 58.1875rem;
     }
+
+    .our_skills p,
+    .fun_facts > p {
+        width: 45%;
+    }
 }
 
 /*
@@ -766,7 +771,7 @@ a:hover .icon {
     }
 
     .team .col-1-4 {
-        width: 24%;
+        width: 24.5%;
     }
 
     .photos {
@@ -1631,6 +1636,7 @@ sub {
 }
 
 .order .col-1-4 .order_button a {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 11px;
