@@ -1366,7 +1366,7 @@ a:hover .icon {
 
 .nav_circle {
     text-align: center;
-    width: 4.0625rem;
+    width: 15%;
     height: 1.25rem;
     margin: auto;
     margin-top: 6.0625rem;
@@ -1952,6 +1952,10 @@ form fieldset {
 
 .social_media a:last-child {
     padding-right: 0;
+}
+
+.social_media a:hover {
+    color: #00ccff;
 }
 
 .rights {
