@@ -396,7 +396,7 @@ header {
 
     .title p,
     .our_team .title p {
-        width: 54%;
+        width: 60%;
         display: inline-block;
         padding-left: 1.875rem;
         margin-top: 3.125rem;
@@ -755,13 +755,14 @@ a:hover .icon {
 
     .team {
         clear: both;
-        margin: 0;
+        width: 100%;
     }
 
     .team .col-1-4 h4,
     .team .col-1-4 h6,
     .team .col-1-4 p {
         text-align: left;
+        width: 100%;
     }
 
     .team .col-1-4 {
@@ -1508,7 +1509,7 @@ a:hover .icon {
         width: 30%;
         min-height: 15rem;
         display: inline-block;
-        margin-right: 1rem;
+        margin-right: 5%;
     }
 
     .column:last-child {
@@ -1524,17 +1525,14 @@ a:hover .icon {
 @media screen and (min-width: 800px) {
     .logos {
         display: block;
-        clear: both;
+        width: 90%;
+        margin: auto;
     }
 
     .one_logo {
         height: 3.8125rem;
         display: inline-block;
-        margin-right: 1rem;
-    }
-
-    .one_logo:first-child {
-        margin-left: 1rem;
+        margin-right: 2px;
     }
 
     .one_logo:last-child {
@@ -1547,8 +1545,17 @@ a:hover .icon {
         width: 100%;
     }
 
+    .logos {
+        width: 100%;
+        clear: both;
+    }
+
     .one_logo {
-        margin-right: 1.5rem;
+        margin-right: 2.7rem;
+    }
+
+     .one_logo:first-child {
+        margin-left: 1rem;
     }
 }
 
