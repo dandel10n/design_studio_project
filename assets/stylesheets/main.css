@@ -485,7 +485,7 @@ a:hover .icon {
 
 @media screen and (min-width: 600px){
     .focus {
-        max-width: 95%;
+        max-width: 100%;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -624,7 +624,7 @@ a:hover .icon {
     }
 
     .col-1-4 {
-        width: 24%;
+        width: 25%;
     }
 }
 
@@ -771,7 +771,7 @@ a:hover .icon {
     }
 
     .team .col-1-4 {
-        width: 24.5%;
+        width: 25%;
     }
 
     .photos {
