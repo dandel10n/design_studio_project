@@ -1,0 +1,23 @@
+{
+  "name": "design_studio_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandel10n/design_studio_project.git"
+  },
+  "author": "Mariya Dergay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dandel10n/design_studio_project/issues"
+  },
+  "homepage": "https://github.com/dandel10n/design_studio_project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
