@@ -52,11 +52,6 @@ table {
   ========================================
 */
 
-@viewport {
-    width: device-width;
-    zoom: 1;
-}
-
 html {
     font-size: 12px;
 }
@@ -102,7 +97,6 @@ body {
     margin: 0 auto;
 }
 
-
 /*
  ========================================
   Header
@@ -114,6 +108,24 @@ header {
     min-height: 40rem;
     background: url("../images/bcgrndman.png") 100% 100% no-repeat;
     background-size: cover;
+}
+
+.nav_header {
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+
+.nav_header li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.nav_header li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo {
@@ -148,7 +160,7 @@ header {
     color: #fff;
     margin: auto;
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-shadow: 0 0 10px black;
 }
 
@@ -187,6 +199,24 @@ header {
         min-height: 64.5rem;
     }
 
+    .nav_header {
+        float: right;
+        margin-right: 20%;
+        margin-bottom: 10rem;
+    }
+
+    .nav_header li {
+        margin: 0 1.25rem;
+    }
+
+    .nav_header li:last-child {
+        margin-right: 0;
+    }
+
+    .nav_header li:first-child {
+        margin-left: 0;
+    }
+
     .header_words {
         width: 50%;
     }
@@ -207,50 +237,6 @@ header {
     .scroll img {
         width: 2.875rem;
         height: 4.25rem;
-    }
-}
-
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
-
-.nav_header {
-    font-size: 1rem;
-    text-align: center;
-    text-shadow: 0 0 10px black;
-    padding-top: 5%;
-    margin-bottom: 10%;
-}
-
-.nav_header li {
-    display: inline-block;
-    margin: 0 0.5rem;
-}
-
-.nav_header li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-@media screen and (min-width: 1000px)  {
-    .nav_header {
-        float: right;
-        margin-right: 20%;
-        margin-bottom: 10rem;
-    }
-
-    .nav_header li {
-        margin: 0 1.25rem;
-    }
-
-    .nav_header li:last-child {
-        margin-right: 0;
-    }
-
-    .nav_header li:first-child {
-        margin-left: 0;
     }
 }
 
@@ -682,7 +668,7 @@ a:hover .icon {
 .team .col-1-4 h6 {
     font-size: 0.75rem;
     color: #00ccff;
-    padding-left: 2.375rem;
+    text-align: center;
     padding-bottom: 1.25rem;
 }
 
@@ -1372,7 +1358,7 @@ a:hover .icon {
 
 .nav_circle {
     text-align: center;
-    width: 15%;
+    width: 50%;
     height: 1.25rem;
     margin: auto;
     margin-top: 6.0625rem;
@@ -1382,8 +1368,8 @@ a:hover .icon {
 .nav_circle a {
     display: inline-block;
     text-decoration: none;
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #ccc;
     margin-right: 0.3125rem;
@@ -1571,7 +1557,7 @@ a:hover .icon {
 */
 
 .prices {
-    min-height: 150rem;
+    min-height: 155rem;
     background-color: #eaeaea;
 }
 
@@ -1787,6 +1773,8 @@ form fieldset {
     width: 100%;
     margin-bottom: 0.625rem;
     padding: 0.9375rem 1.125rem;
+    font: 1rem Gevena, sans-serif;
+    -webkit-appearance: none;
 }
 
 .message_group input {
@@ -1805,8 +1793,9 @@ form fieldset {
     cursor: pointer;
     font-size: 1rem;
     border: 1px solid #0cf;
-    border-radius: 4px;
     margin-left: 5%;
+    border-radius: 4px;
+    -webkit-appearance: none;
 }
 
 .addit_info {
@@ -1974,7 +1963,7 @@ form fieldset {
 .rights {
     min-height: 3.75rem;
     background-color: #0cf;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     font-weight: bold;
     line-height: 3.75rem;
@@ -1984,4 +1973,10 @@ form fieldset {
 .rights a {
     text-decoration: none;
     color: #0f91b1;
+}
+
+@media screen and (min-width: 600px) {
+    .rights {
+        font-size: 1rem;
+    }
 }
