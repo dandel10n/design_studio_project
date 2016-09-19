@@ -7,7 +7,7 @@ Web Designer: [Rudhi Sasmito](https://www.behance.net/rudhisasmito)
 
 [Screenshot of the project](preview.jpg)
 
-##Supported browsers:
+##Tested on browsers
 
 **Desktop browsers:**
 
