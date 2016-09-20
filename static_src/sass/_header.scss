@@ -1,0 +1,138 @@
+header {
+  background-color: #fff;
+  min-height: 40rem;
+  background: url("../images/bcgrndman.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.nav_header {
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+  padding-top: 5%;
+  margin-bottom: 10%;
+
+  li {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.logo {
+  display: none;
+}
+
+.header_words {
+  clear: both;
+  text-align: center;
+}
+
+.big_logo {
+  width: 12rem;
+  margin: auto;
+  margin-bottom: 10%;
+
+  img {
+    width: 12rem;
+    height: 11.9375rem;
+  }
+}
+
+.header_words {
+  h2,
+  p {
+    line-height: 1.2;
+    color: #fff;
+    margin: auto;
+    width: 90%;
+    font-size: 1rem;
+    text-shadow: 0 0 10px black;
+  }
+  h2 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+}
+
+.scroll {
+  display: none;
+}
+
+@media screen and (min-width: 600px)  {
+
+  header {
+    min-height: 50rem;
+  }
+
+  .header_words {
+    margin: auto;
+    width: 80%;
+  }
+
+  .big_logo {
+    margin-bottom: 3.75rem;
+  }
+
+  .header_words {
+    h2,
+    p {
+      font-size: 1.375rem;
+    }
+    h2 {
+      padding-bottom: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+
+  header {
+    min-height: 64.5rem;
+  }
+
+  .nav_header {
+    float: right;
+    margin-right: 20%;
+    margin-bottom: 10rem;
+
+    li {
+      margin: 0 1.25rem;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .header_words {
+    width: 50%;
+  }
+
+  .logo {
+    display: inline-block;
+    padding-top: 1.875rem;
+    margin-left: 15%;
+  }
+
+  .scroll {
+    display: block;
+    margin: auto;
+    margin-top: 7.75rem;
+    width: 2.875rem;
+
+    img {
+      width: 2.875rem;
+      height: 4.25rem;
+    }
+  }
+}
