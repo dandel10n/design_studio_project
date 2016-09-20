@@ -18,7 +18,9 @@
   "homepage": "https://github.com/dandel10n/design_studio_project#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
     "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"
   }
 }

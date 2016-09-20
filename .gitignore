@@ -1,3 +1,9 @@
+# IDE files
+.idea
+
+# Compiled static
+static
+
 # Logs
 logs
 *.log

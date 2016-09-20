@@ -192,7 +192,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), myMapOptions); 
 
 	var image = new google.maps.MarkerImage(
-	    'static_src/images/marker-images/image.png',
+	    'static/images/marker-images/image.png',
 		new google.maps.Size(1534,559),
 		new google.maps.Point(0,0),
 		new google.maps.Point(26,68)
