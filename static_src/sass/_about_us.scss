@@ -1,0 +1,149 @@
+.about_us {
+  min-height: 40rem;
+}
+
+.about_us_logo {
+  span {
+    color: #ff9900;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #0cf;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    color: #666;
+    text-transform: capitalize;
+    font-style: italic;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
+.lines {
+  display: none;
+}
+
+.about_us_logo,
+.title div,
+.title p {
+  margin: 10% auto;
+  text-align: center;
+}
+
+.title p,
+.our_team .title p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.25;
+  width: 90%;
+}
+
+.about_us_nav {
+  clear: both;
+  background-color: #eaeaea;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  li {
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-style: italic;
+    height: 3rem;
+    border-bottom: 1px solid white;
+  }
+
+  li:hover {
+    background-color: #00ccff;
+  }
+
+  li a:hover {
+    color: #fff;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .about_us {
+    min-height: 50rem;
+  }
+
+  .about_us_nav {
+    width: 37.5rem;
+    -webkit-transform: skew(-19.3deg);
+    -moz-transform: skew(-19.3deg);
+    -o-transform: skew(-19.3deg);
+    transform: skew(-19.3deg);
+
+    li {
+      line-height: 3.625rem;
+      width: 9.375rem;
+      display: inline-block;
+      height: 3.625rem;
+      border-left: 1px solid white;
+      font-style: normal;
+      border-bottom: none;
+    }
+
+    li a {
+      -webkit-transform: skew(10deg);
+      -moz-transform: skew(10deg);
+      -o-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about_us {
+    min-height: 60.6875rem;
+
+    h2,
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .about_us_logo,
+  .lines,
+  .title div,
+  .title p {
+    float: left;
+    padding-top: 7.5rem;
+    margin: 0 0 4.6875rem 0;
+  }
+
+  .lines {
+    display: inline-block;
+    padding-left: 1.875rem;
+  }
+
+  .title p,
+  .our_team .title p {
+    width: 60%;
+    display: inline-block;
+    padding-left: 1.875rem;
+    margin-top: 3.125rem;
+    text-align: left;
+  }
+
+  .about_us_nav {
+    margin: 0 0 5.625rem 0;
+  }
+}

@@ -1,0 +1,109 @@
+.our_skills {
+  background-color: #f7f7f7;
+  min-height: 65rem;
+}
+
+.our_skills h4,
+.fun_facts h4,
+.addit_work h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3.3125rem;
+}
+
+.our_skills p,
+.fun_facts > p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.25;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  padding-bottom: 4rem;
+}
+
+.our_skills .col-1-4 h4,
+.team .col-1-4 h4 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.our_skills .col-1-4 p,
+.team .col-1-4 p {
+  font-size: 1rem;
+  color: #999;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+  min-height: 3.3125rem;
+}
+
+.col-1-4 {
+  display: inline-block;
+  width: 49%;
+}
+
+.percent_row {
+  position: relative;
+  width: 9.625rem;
+  height: 9.625rem;
+  margin: auto;
+
+  img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+  }
+
+  span {
+    position: absolute;
+    font-size: 1.875rem;
+    color: #333;
+    font-weight: bold;
+    top: 37%;
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 600px){
+
+  .our_skills h4,
+  .fun_facts h4,
+  .addit_work h4 {
+    padding-top: 7.8125rem;
+    padding-bottom: 3.3125rem;
+  }
+
+  .our_skills p,
+  .fun_facts > p {
+    width: 60%;
+    min-height: 2.1875rem;
+    padding-bottom: 6.5625rem;
+  }
+
+  .col-1-4 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .our_skills {
+    min-height: 58.1875rem;
+  }
+
+  .our_skills p,
+  .fun_facts > p {
+    width: 45%;
+  }
+}

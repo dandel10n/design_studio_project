@@ -1,0 +1,178 @@
+*/
+
+.get_in_touch {
+  min-height: 94.6875rem;
+}
+
+form {
+  margin-bottom: 4rem;
+  width: 100%;
+  min-height: 18.125rem;
+}
+
+form fieldset {
+  width: 90%;
+  margin: auto;
+}
+
+.message_group input,
+.message_group textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 0.625rem;
+  padding: 0.9375rem 1.125rem;
+  font: 1rem Gevena, sans-serif;
+  -webkit-appearance: none;
+}
+
+.message_group input {
+  height: 3rem;
+}
+
+.message_group textarea {
+  height: 9.875rem;
+}
+
+.send_btn {
+  height: 3.125rem;
+  width: 9.0625rem;
+  color: #fff;
+  background-color: #0cf;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid #0cf;
+  margin-left: 5%;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+
+.addit_info {
+  width: 90%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.addit_info h5,
+.addit_info p {
+  font-size: 1rem;
+}
+
+.addit_info h5 {
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.addit_info p {
+  color: #666;
+  padding-bottom: 2.5rem;
+  line-height: 1.375;
+}
+
+.addit_info .contacts p {
+  padding-bottom: 0;
+}
+
+.addit_info .contacts p i {
+  font-size: 1.5rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0.625rem;
+}
+
+#map {
+  width: 100%;
+  height: 34.375rem;
+  margin-bottom: 0.3125rem;
+}
+
+@media screen and (min-width: 600px) {
+
+  .message_group input,
+  .message_group textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.625rem;
+    padding: 0.9375rem 1.125rem;
+  }
+
+  .message_group input {
+    width: 48.9%;
+    height: 3rem;
+    display: inline-block;
+  }
+
+  .message_group input:first-child {
+    margin-right: 0.625rem;
+  }
+
+  .message_group .subject {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .get_in_touch {
+    min-height: 80rem;
+  }
+
+  form {
+    margin-bottom: 9.375rem;
+    width: 34.375rem;
+    min-height: 18.125rem;
+    float: left;
+    clear: left;
+  }
+
+  .message_group input,
+  .message_group textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 0.625rem;
+    padding: 0.9375rem 1.125rem;
+  }
+
+  .message_group input {
+    width: 16.3125rem;
+    height: 3rem;
+    display: inline-block;
+  }
+
+  .message_group input:first-child {
+    margin-right: 0.625rem;
+  }
+
+  .message_group .subject {
+    width: 33.5rem;
+    display: block;
+  }
+
+  .addit_info {
+    float: left;
+    width: 30%;
+    text-align: left;
+    margin-left: 1.5625rem;
+  }
+
+  .send_btn {
+    margin-left: 1.5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .get_in_touch .about_us_logo,
+  .get_in_touch .lines,
+  .get_in_touch .title div,
+  .get_in_touch .title p {
+    padding-top: 11.25rem;
+    margin-bottom: 10.3125rem;
+  }
+
+  .addit_info {
+    width: 21.25rem;
+  }
+}

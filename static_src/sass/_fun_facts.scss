@@ -1,0 +1,118 @@
+.fun_facts {
+  min-height: 52rem;
+  background-color: #f7f7f7;
+
+  & > p {
+    padding-bottom: 0;
+  }
+}
+
+.fun_blocks {
+  width: 90%;
+  margin: auto;
+  margin-top: 4.6875rem;
+
+  .col-1-4 {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    background-color: #fff;
+
+    p {
+      font-size: 1.375rem;
+      color: #0cf;
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    .index {
+      font-size: 3.25rem;
+      color: #333;
+      margin-top: 0;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.fun_icon {
+  font-size: 4.375rem;
+  color: #333;
+  float: left;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+@media screen and (min-width: 600px) {
+
+  .fun_icon,
+  .fun_blocks .index,
+  .fun_blocks  .col-1-4 p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 84px;
+  }
+
+  .fun_blocks .col-1-4 {
+    height: 84px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+
+    p {
+      width: 30%;
+      margin-left: 2rem;
+    }
+  }
+
+  .fun_icon {
+    float: none;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .fun_facts {
+    min-height: 48.75rem;
+  }
+
+  .fun_blocks {
+    width: 58.75rem;
+
+    .col-1-4 {
+      display: inline-block;
+      min-height: 16.5625rem;
+      width: 15rem;
+
+      &:first-child,
+      &:last-child {
+        width: 14.375rem;
+      }
+
+      p {
+        width: 80%;
+        margin: auto;
+      }
+
+      .index {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .fun_icon,
+  .fun_blocks .index,
+  .fun_blocks .col-1-4  p {
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .fun_icon {
+    padding: 2.5rem 0 0.625rem 0;
+  }
+}

@@ -1,0 +1,94 @@
+.twitter,
+.quote {
+  background-color: #333;
+  min-height: 40rem;
+
+  i {
+    display: block;
+    font-size: 6.25rem;
+    color: #0cf;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: #fff;
+    line-height: 1.2;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.nav_circle {
+  text-align: center;
+  width: 50%;
+  height: 1.25rem;
+  margin: auto;
+  margin-top: 6.0625rem;
+  margin-bottom: 1.875rem;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 0.3125rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &.active {
+      background-color: #999;
+    }
+  }
+}
+
+.twitter {
+  span {
+    display: block;
+    font-size: 1.375rem;
+    color: #fff;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #26809c;
+    }
+  }
+}
+
+.quote {
+  .author {
+    padding-top: 4.57rem;
+  }
+
+  .nav_circle {
+    margin-top: 2.1875rem;
+  }
+
+  i {
+    padding-bottom: 4.6875rem;
+  }
+}
+
+@media screen and (min-width: 600px)  {
+  .twitter,
+  .quote {
+    background: url("../images/bcgrndtwitter2.png") 100% 100% no-repeat;
+    background-size: cover;
+    min-height: 54rem;
+    margin-top: -11rem;
+
+    i {
+      padding-top: 12rem;
+      padding-bottom: 5.9375rem;
+    }
+  }
+}

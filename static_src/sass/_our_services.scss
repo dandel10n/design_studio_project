@@ -1,0 +1,30 @@
+.our_sevices {
+  min-height: 65rem;
+
+  .title:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .part_of_focus {
+    h2 {
+      color: #ff9900;
+    }
+    .icon {
+      background-color: #00ccff;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .our_sevices {
+    min-height: 55rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .our_sevices {
+    min-height: 63.125rem;
+  }
+}
