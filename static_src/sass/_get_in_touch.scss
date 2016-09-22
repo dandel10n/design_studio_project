@@ -1,5 +1,3 @@
-*/
-
 .get_in_touch {
   min-height: 94.6875rem;
 }
@@ -8,30 +6,32 @@ form {
   margin-bottom: 4rem;
   width: 100%;
   min-height: 18.125rem;
+
+  fieldset {
+    width: 90%;
+    margin: auto;
+  }
 }
 
-form fieldset {
-  width: 90%;
-  margin: auto;
-}
+.message_group {
+  input,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    padding: 0.9375rem 1.125rem;
+    font: 1rem Gevena, sans-serif;
+    -webkit-appearance: none;
+  }
 
-.message_group input,
-.message_group textarea {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 0.625rem;
-  padding: 0.9375rem 1.125rem;
-  font: 1rem Gevena, sans-serif;
-  -webkit-appearance: none;
-}
+  input {
+    height: 3rem;
+  }
 
-.message_group input {
-  height: 3rem;
-}
-
-.message_group textarea {
-  height: 9.875rem;
+  textarea {
+    height: 9.875rem;
+  }
 }
 
 .send_btn {
@@ -52,34 +52,34 @@ form fieldset {
   text-align: left;
   margin: auto;
   margin-bottom: 4rem;
-}
 
-.addit_info h5,
-.addit_info p {
-  font-size: 1rem;
-}
+  h5,
+  p {
+    font-size: 1rem;
+  }
 
-.addit_info h5 {
-  color: #333;
-  font-weight: bold;
-  padding-bottom: 1.25rem;
-  text-transform: uppercase;
-}
+  h5 {
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
 
-.addit_info p {
-  color: #666;
-  padding-bottom: 2.5rem;
-  line-height: 1.375;
-}
+  p {
+    color: #666;
+    padding-bottom: 2.5rem;
+    line-height: 1.375;
+  }
 
-.addit_info .contacts p {
-  padding-bottom: 0;
-}
+  .contacts p {
+    padding-bottom: 0;
 
-.addit_info .contacts p i {
-  font-size: 1.5rem;
-  padding-right: 0.9375rem;
-  padding-bottom: 0.625rem;
+    i {
+      font-size: 1.5rem;
+      padding-right: 0.9375rem;
+      padding-bottom: 0.625rem;
+    }
+  }
 }
 
 #map {
@@ -90,33 +90,26 @@ form fieldset {
 
 @media screen and (min-width: 600px) {
 
-  .message_group input,
-  .message_group textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 0.625rem;
-    padding: 0.9375rem 1.125rem;
-  }
+  .message_group {
+    .subject {
+      width: 100%;
+      display: block;
+    }
+    input {
+      width: 48.9%;
+      height: 3rem;
+      display: inline-block;
 
-  .message_group input {
-    width: 48.9%;
-    height: 3rem;
-    display: inline-block;
-  }
-
-  .message_group input:first-child {
-    margin-right: 0.625rem;
-  }
-
-  .message_group .subject {
-    width: 100%;
-    display: block;
+      &:first-child {
+        margin-right: 0.625rem;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 800px) {
   .get_in_touch {
-    min-height: 80rem;
+    min-height: 82.5rem;
   }
 
   form {
@@ -127,28 +120,26 @@ form fieldset {
     clear: left;
   }
 
-  .message_group input,
-  .message_group textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: block;
-    margin-bottom: 0.625rem;
-    padding: 0.9375rem 1.125rem;
-  }
+  .message_group {
+    input,
+    textarea {
+      display: block;
+    }
 
-  .message_group input {
-    width: 16.3125rem;
-    height: 3rem;
-    display: inline-block;
-  }
+    input {
+      width: 16.3125rem;
+      height: 3rem;
+      display: inline-block;
 
-  .message_group input:first-child {
-    margin-right: 0.625rem;
-  }
+      &:first-child {
+        margin-right: 0.625rem;
+      }
+    }
 
-  .message_group .subject {
-    width: 33.5rem;
-    display: block;
+    .subject {
+      width: 33.5rem;
+      display: block;
+    }
   }
 
   .addit_info {
@@ -161,15 +152,26 @@ form fieldset {
   .send_btn {
     margin-left: 1.5%;
   }
+
+  #map:before {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  .get_in_touch .about_us_logo,
-  .get_in_touch .lines,
-  .get_in_touch .title div,
-  .get_in_touch .title p {
-    padding-top: 11.25rem;
-    margin-bottom: 10.3125rem;
+
+  .get_in_touch {
+    min-height: 95rem;
+
+    .about_us_logo,
+    .lines,
+    .title div,
+    .title p {
+      padding-top: 11.25rem;
+      margin-bottom: 10.3125rem;
+    }
   }
 
   .addit_info {
