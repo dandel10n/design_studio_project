@@ -7,7 +7,7 @@ Web Designer: [Rudhi Sasmito](https://www.behance.net/rudhisasmito)
 
 [Screenshot of the project](preview.jpg)
 
-##Tested on browsers
+## Tested on browsers
 
 **Desktop browsers:**
 
@@ -27,8 +27,42 @@ Chrome 52| Chrome 53
 Android|Firefox 5
 Firefox|Safari 10
 
+## Supported resolutions
 
-##Supported resolutions
+Width from 300px to 1540px
 
-width from 300px to 1540px 
+## How to clone the project
 
+`$ git clone https://github.com/dandel10n/design_studio_project.git` 
+
+Link could be faund in the repo by clicking the "Clone or download" button
+
+## Dependencies installation 
+
+You need node.js and npm first. You can download it [here](https://nodejs.org/en/download/).
+
+Then, to install all needed dependencies run:
+
+```
+npm install
+```
+
+## Project usage
+
+To compile static files run:
+
+```
+npm run build
+```
+
+To watch changes run:
+
+```
+npm run watch
+```
+
+To run local webserver (you can use it for testing on various devices):
+
+```
+npm run webserver
+```
