@@ -13,7 +13,7 @@ function errorLog(error) {
 
 //Copy Task
 //Copies font-awesome
-gulp.task('copy', function(){
+gulp.task('copy', function() {
     gulp.src('static_src/font-awesome-4.6.3/**')
         .pipe(gulp.dest('static/font-awesome-4.6.3'));
 });
@@ -21,7 +21,7 @@ gulp.task('copy', function(){
 
 //Scripts Task
 //Uglifies JS
-gulp.task('scripts', function(){
+gulp.task('scripts', function() {
    gulp.src('static_src/js/*.js')
    .pipe(uglify())
    .on('error', errorLog)
@@ -30,7 +30,7 @@ gulp.task('scripts', function(){
  
 //Styles Task
 //Uglifies
-gulp.task('styles', function(){
+gulp.task('styles', function() {
     return gulp.src('static_src/sass/*.scss')
     .pipe(sass({
         outputStyle: 'compressed'
@@ -41,7 +41,7 @@ gulp.task('styles', function(){
 
 //Image Task
 //Compress
-gulp.task('image', function(){
+gulp.task('image', function() {
     gulp.src('static_src/images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('static/images'));
@@ -49,9 +49,11 @@ gulp.task('image', function(){
 
 //Watch Task
 //Watches for changings
-gulp.task('watch', function(){
-    gulp.watch('static_src/**/*.js', ['scripts']);
+gulp.task('watch', ['build'], function() {
+    gulp.watch('static_src/js/*.js', ['scripts']);
     gulp.watch('static_src/sass/*.scss', ['styles']);
+    gulp.watch('static_src/font-awesome-4.6.3/**', ['copy']);
+    gulp.watch('static_src/images/**/*', ['image']);
 });
 
 //Webserver Task
@@ -64,4 +66,7 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', ['scripts', 'styles', 'watch', 'copy']);
+//Build Task
+gulp.task('build', ['scripts', 'styles', 'copy', 'image']);
+
+gulp.task('default', ['watch']);
