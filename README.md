@@ -23,8 +23,10 @@ Opera	40.0 | Opera 39
 Android:|IOS:|
 --------|----|
 Chrome 52 | Chrome 53
-Firefox 48 |Firefox 5
- |Safari 10
+Firefox 48 |Firefox 5.3
+Opera 37.0 |Safari for ios10 for iphone
+ | Safari for ios9.3.5 for ipad
+
 
 ## Supported resolutions
 
