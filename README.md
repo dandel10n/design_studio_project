@@ -14,10 +14,9 @@ Web Designer: [Rudhi Sasmito](https://www.behance.net/rudhisasmito)
  Mac:  |Windows:             |
 -------|---------------------|
 Chrome 53 | Chrome 53
-Firefox 49 | Firefox 48 
-Internet Explorer 11 | Internet Explorer 11
-Opera	40 |Opera 39
-Safari 10 |
+Firefox 49 | Firefox 49
+Safari 9.1 | Internet Explorer 11
+Opera	40.0 | Opera 39
 
 **Mobile devices:**
 
