@@ -11,7 +11,7 @@ Web Designer: [Rudhi Sasmito](https://www.behance.net/rudhisasmito)
 
 **Desktop browsers:**
 
- Mac:  |Windows:             |
+ Mac  |Windows             |
 -------|---------------------|
 Chrome 53 | Chrome 53
 Firefox 49 | Firefox 49
@@ -20,12 +20,12 @@ Opera	40.0 | Opera 39
 
 **Mobile devices:**
 
-Android:|IOS:|
+Android|iOS|
 --------|----|
 Chrome 52 | Chrome 53
-Firefox 48 |Firefox 5.3
-Opera 37.0 |Safari for ios10 for iphone
- | Safari for ios9.3.5 for ipad
+Firefox 48 | Firefox 5.3
+Opera 37.0 | Safari for iOS 10 (iPhone)
+ | Safari for iOS 9 (iPad)
 
 
 ## Supported resolutions
