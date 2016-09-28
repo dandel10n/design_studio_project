@@ -13,29 +13,29 @@ Web Designer: [Rudhi Sasmito](https://www.behance.net/rudhisasmito)
 
  Mac:  |Windows:             |
 -------|---------------------|
-Chrome | Chrome 53
-Firefox | Firefox 48 
-Internet Explorer | Internet Explorer 11
-Opera	|Opera 39
-Safari |
+Chrome 53 | Chrome 53
+Firefox 49 | Firefox 48 
+Internet Explorer 11 | Internet Explorer 11
+Opera	40 |Opera 39
+Safari 10 |
 
 **Mobile devices:**
 
 Android:|IOS:|
 --------|----|
-Chrome 52| Chrome 53
-Android|Firefox 5
-Firefox|Safari 10
+Chrome 52 | Chrome 53
+Firefox 48 |Firefox 5
+ |Safari 10
 
 ## Supported resolutions
 
 Width from 300px to 1540px
 
 ## How to clone the project
-
-`$ git clone https://github.com/dandel10n/design_studio_project.git` 
-
-Link could be faund in the repo by clicking the "Clone or download" button
+```
+$ git clone https://github.com/dandel10n/design_studio_project.git 
+```
+The link could be found in the repo by clicking the "Clone or download" button
 
 ## Dependencies installation 
 
