@@ -62,7 +62,7 @@ To watch changes run:
 npm run watch
 ```
 
-To run local webserver (you can use it for testing on various devices):
+To run local webserver (you can use it for testing on various devices(address: localhost:8000)):
 
 ```
 npm run webserver
